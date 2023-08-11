@@ -1,0 +1,284 @@
+@charset "UTF-8";
+.header {
+  display: flex;
+  z-index: 99;
+  position: absolute;
+  width: 100vw;
+  max-width: 100%;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 24px;
+}
+.header .logo {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 6px;
+}
+.header .link-container {
+  display: flex;
+  width: 100%;
+  margin: 16px 32px;
+  gap: 32px;
+}
+.header .link-container :first-child {
+  margin-right: auto;
+}
+
+.title {
+  text-align: center;
+  font-family: "Teko", sans-serif;
+  font-weight: 700;
+  line-height: 0.78em;
+  width: 100%;
+  margin: auto;
+  height: fit-content;
+  text-transform: uppercase;
+}
+.title .pretitle {
+  font-size: 36px;
+  font-family: "Lobster", cursive;
+  line-height: 2.5em;
+  text-transform: none;
+}
+.title .subtitle {
+  font-size: 16px;
+  font-family: "Source Code Pro", monospace;
+  text-transform: none;
+  font-weight: 200;
+  line-height: 2em;
+  max-width: 850px;
+  margin: auto;
+}
+.title .maintitle {
+  display: flex;
+  flex-wrap: nowrap;
+  width: fit-content;
+  margin: auto;
+  line-height: 1;
+  max-height: 190px;
+}
+.title .maintitle .inlineLogo {
+  transform: translateY(-12%);
+  margin-right: 4px;
+}
+
+.desingedBy {
+  font-size: 10px;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  font-family: "Source Code Pro", monospace;
+  z-index: 99;
+}
+.desingedBy a {
+  text-decoration: none;
+  color: black;
+}
+
+.cutout-overlay {
+  width: 100vw;
+  height: 100vh;
+  font-size: 200px;
+  color: black;
+  background-color: white;
+  mix-blend-mode: lighten;
+  position: relative;
+  display: flex;
+  overflow: hidden;
+}
+.cutout-overlay .cutout {
+  position: absolute;
+}
+.cutout-overlay .cutout.tl {
+  top: 20%;
+  left: 0%;
+}
+.cutout-overlay .cutout.rm {
+  top: 5%;
+  right: 10%;
+}
+.cutout-overlay .cutout.cl {
+  bottom: 0;
+  transform: translate(-40%, 40%);
+  left: 0;
+}
+.cutout-overlay .cutout.cr {
+  bottom: 0;
+  transform: translate(40%, 40%);
+  right: 0;
+}
+
+.image-overlay {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+.image-overlay img {
+  position: absolute;
+}
+.image-overlay img.astronaut {
+  right: 0;
+  width: 50vh;
+  bottom: 0vh;
+}
+.image-overlay img.ufo {
+  left: 0;
+  width: 40vh;
+  transform: rotate(-20deg);
+}
+.image-overlay img.planet1 {
+  bottom: 3%;
+  left: 20%;
+  max-width: 180px;
+}
+.image-overlay img.planet2 {
+  top: 10%;
+  right: 20%;
+  width: 30vh;
+  max-width: 250px;
+}
+.image-overlay img.rocket {
+  left: 0%;
+  transform: translate(0, 0) rotate(20deg);
+  width: 30vh;
+  bottom: 20%;
+  max-width: 250px;
+}
+
+body {
+  margin: 0px;
+  background-color: black;
+  font-family: "Teko", sans-serif;
+}
+
+canvas.space {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/*background*/
+.wall {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/18515/PIA09959-1280x800_copy.jpg);
+  background-size: cover;
+}
+
+body {
+  background: #000;
+  text-align: center;
+}
+
+body:before {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.scene {
+  display: inline-block;
+  vertical-align: middle;
+  perspective: 5px;
+  perspective-origin: 50% 50%;
+  position: relative;
+}
+
+.wrap {
+  position: absolute;
+  width: 1000px;
+  height: 1000px;
+  left: -500px;
+  top: -500px;
+  transform-style: preserve-3d;
+  animation: move 12s infinite linear;
+  animation-fill-mode: forwards;
+}
+
+.wrap:nth-child(2) {
+  animation: move 12s infinite linear;
+  animation-delay: 6s;
+}
+
+.wall {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 0;
+  animation: fade 12s infinite linear;
+  animation-delay: 0;
+}
+
+.wrap:nth-child(2) .wall {
+  animation-delay: 6s;
+}
+
+.wall-right {
+  transform: rotateY(90deg) translateZ(500px);
+}
+
+.wall-left {
+  transform: rotateY(-90deg) translateZ(500px);
+}
+
+.wall-top {
+  transform: rotateX(90deg) translateZ(500px);
+}
+
+.wall-bottom {
+  transform: rotateX(-90deg) translateZ(500px);
+}
+
+.wall-back {
+  transform: rotateX(180deg) translateZ(500px);
+}
+
+@keyframes move {
+  0% {
+    transform: translateZ(-500px) rotate(0deg);
+  }
+  100% {
+    transform: translateZ(500px) rotate(0deg);
+  }
+}
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+/*
+.scene {
+  animation: 🤫 300s infinite linear;
+}
+
+@keyframes 🤫 {
+  0%{
+    filter: hue-rotate(0)
+  }
+  50% {
+    filter: hue-rotate(180deg) saturation(5);
+    transform: scaleX(4000);
+    perspective: 50px;
+  }
+
+  100%{
+    filter: hue-rotate(360deg);
+  }
+}
+*/
+
+/*# sourceMappingURL=404.css.map */
