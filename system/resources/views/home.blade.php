@@ -50,27 +50,44 @@
     </nav>
 </header>
 <section class="home-banner">
-
-    <img src="@assets('images/banner/dummmy.png')" alt="" width="100%"/>
-    <div class="container">
-        <div class="text-container">
-            <h1 class="display-1 work-sans fw-bolder text-white mb-5 pb-5 skew floating-element">
-                <span class="underline">Lorem </span>Ipsum
-                <span class="d-block">
+    <div class="row h-100">
+        <div class="col-12 col-md-6 order-2 position-relative">
+            <div class="banner-area">
+                <img src="@assets('images/banner/arrow.png')" alt="" class="arrow" width="100%"/>
+                <div class="person-container">
+                    <img src="@assets('images/banner/dummy.png')" alt="" class="person" width="100%"/>
+                    <div class="elements">
+                        <img src="@assets('images/banner/Vector.svg')" class="vector _1 float-effect" alt=""
+                             width="100%"/>
+                        <img src="@assets('images/banner/Vector-1.svg')" class="vector _2 float-effect" alt=""
+                             width="100%"/>
+                        <img src="@assets('images/banner/Vector-2.svg')" class="vector _3 float-effect" alt=""
+                             width="100%"/>
+                        <img src="@assets('images/banner/Vector-3.svg')" class="vector _4 float-effect" alt=""
+                             width="100%"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 order-1 d-flex align-items-center justify-content-center p-5">
+            <div class="text-container">
+                <h1 class="display-1 work-sans fw-bolder text-white mb-5 pb-5 skew floating-element">
+                    <span class="underline">Lorem </span>Ipsum
+                    <span class="d-block">
                                 What is Ipsum?
                            </span>
-            </h1>
-            <p class="text-white fs-6 mb-4 w-75">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                been the
-                industry's standard dummy text ever since the 1500s.
-            </p>
-            <button class="glow-on-hover active btn btn-dark text-uppercase btn-lg">Book a Discovery Call <i
-                    class="ms-2 fa-brands fa-searchengin fa-bounce"></i></button>
+                </h1>
+                <p class="text-white fs-6 mb-4 w-75">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                    been the
+                    industry's standard dummy text ever since the 1500s.
+                </p>
+                <button class="glow-on-hover active btn btn-dark text-uppercase btn-lg">Book a Discovery Call <i
+                        class="ms-2 fa-brands fa-searchengin fa-bounce"></i></button>
 
+            </div>
         </div>
     </div>
-
 </section>
 
 <section class="container mt-5" id="counter">
@@ -263,6 +280,12 @@
     </div>
 </section>
 <section class="container-fluid" id="orbit">
+    <div class="heading mb-3" aria-hidden="true">
+        <img src="@assets('images/elements/pl2.png')" class="pl2 floating-element" alt="">
+        <p class="headline">Eclipsing Paying</p>
+        <p class="sub-headline">Client Reviews That Leave Us in Awe!</p>
+    </div>
+
     <div class="satellite hscroll floating-effect"></div>
     <div class="space-shuttle hscroll _1">
         <span class="jet-trail _1"></span>
@@ -390,7 +413,7 @@
                 <img src="https://dummyimage.com/400x400/fff/000" class="img-fluid" alt="">
                 <div class="text">
                     <h5>Lorem Ipsum</h5>
-                    <h6>Why do we use it?</h6>
+                    <p>Why do we use it?</p>
                 </div>
             </div>
         </div>
@@ -399,7 +422,7 @@
                 <img src="https://dummyimage.com/400x400/fff/000" class="img-fluid" alt="">
                 <div class="text">
                     <h5>Lorem Ipsum</h5>
-                    <h6>Why do we use it?</h6>
+                    <p>Why do we use it?</p>
                 </div>
             </div>
         </div>
@@ -408,7 +431,7 @@
                 <img src="https://dummyimage.com/400x400/fff/000" class="img-fluid" alt="">
                 <div class="text">
                     <h5>Lorem Ipsum</h5>
-                    <h6>Why do we use it?</h6>
+                    <p>Why do we use it?</p>
                 </div>
             </div>
         </div>
@@ -420,6 +443,80 @@
 
 <footer>
     <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-2">
+                <h4 class="glow-text">Services</h4>
+
+                <ul>
+                    <li>
+                        <a href=""> Website Development</a>
+                    </li>
+                    <li>
+                        <a href=""> Internet Marketing</a>
+                    </li>
+                    <li>
+                        <a href=""> Web Applications</a>
+                    </li>
+                    <li>
+                        <a href="">Mobile Apps</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-2">
+                <h4 class="glow-text">Services</h4>
+
+                <ul>
+                    <li>
+                        <a href=""> Website Development</a>
+                    </li>
+                    <li>
+                        <a href=""> Internet Marketing</a>
+                    </li>
+                    <li>
+                        <a href=""> Web Applications</a>
+                    </li>
+                    <li>
+                        <a href="">Mobile Apps</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-2">
+                <h4 class="glow-text">Services</h4>
+
+                <ul>
+                    <li>
+                        <a href=""> Website Development</a>
+                    </li>
+                    <li>
+                        <a href=""> Internet Marketing</a>
+                    </li>
+                    <li>
+                        <a href=""> Web Applications</a>
+                    </li>
+                    <li>
+                        <a href="">Mobile Apps</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-3"></div>
+            <div class="col-12 col-md-3">
+                <h4 class="glow-text">Get in touch</h4>
+                <h5 class="fw-bold">
+                    Aspect Creative Solutions
+                </h5>
+                <p>
+                    F-305, Dreams Mall,
+                    L.B.S. Marg, Bhandup (West)
+                    Mumbai - 400078
+                </p>
+
+                <p>
+                    Email: <a href="mail:info@aspectcs.com">info@aspectcs.com</a>
+                    <br>
+                    Phone: <a href="tel:+91 98195 82500">+91 98195 82500</a>
+                </p>
+            </div>
+        </div>
         <div class="copyright">
             Copyright &copy; 2023 All rights reserved.
         </div>
@@ -469,7 +566,7 @@
     }*/
     var delays = []
     gsap.to(".orbit-logo", {
-        duration: 20,
+        duration: 30,
         rotation: 360,
         repeat: -1,
         delay: function (index, target, targets) {
