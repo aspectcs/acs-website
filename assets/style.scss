@@ -1,5 +1,36 @@
 @use "sass:math";
 
+/********************************************************/
+$size__site_content_width: 1024px;
+
+/* Media Queries  Not necessarily correct, edit these at will*/
+$media_queries: (
+        'mobile': "only screen and (max-width: 667px)",
+        'tablet': "only screen and (min-width: 668px) and (max-width: #{$size__site_content_width})",
+        'desktop': "only screen and (min-width: #{($size__site_content_width + 1)})",
+        'retina2': "only screen and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi)",
+        'retina3': "only screen and (-webkit-min-device-pixel-ratio: 3) and (min-resolution: 288dpi)",
+        'landscape': "screen and (orientation: landscape)",
+        'portrait': "screen and (orientation: portrait)"
+);
+
+@mixin for-breakpoint($breakpoints) {
+  $conditions: ();
+  @each $breakpoint in $breakpoints {
+    // If the key exists in the map
+    $conditions: append(
+                    $conditions,
+                    map-get($media_queries, $breakpoint),
+                    comma
+    );
+  }
+
+  @media #{$conditions} {
+    @content;
+  }
+}
+
+/********************************************************/
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;700;800&family=Work+Sans:wght@400;700;800&family=Roboto:wght@400;700;800&display=swap');
 
 :root {
@@ -24,6 +55,109 @@ html, body {
   font-style: normal;
 }
 
+
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: black;
+
+  .scene {
+    display: inline-block;
+    vertical-align: middle;
+    perspective: 5px;
+    perspective-origin: 50% 50%;
+    position: relative;
+
+
+    .wall {
+      background: url(./images/elements/space-wall.jpeg);
+      background-size: cover;
+    }
+
+    .wrap {
+      position: absolute;
+      width: 1000px;
+      height: 1000px;
+      left: -500px;
+      top: -500px;
+      transform-style: preserve-3d;
+      animation: move 12s infinite linear;
+      animation-fill-mode: forwards;
+
+    }
+
+    .wrap:nth-child(2) {
+      animation: move 12s infinite linear;
+      animation-delay: 6s;
+    }
+
+    .wall {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      opacity: 0;
+      animation: fade 12s infinite linear;
+    }
+
+    .wrap:nth-child(2) .wall {
+      animation-delay: 6s;
+    }
+
+    .wall-right {
+      transform: rotateY(90deg) translateZ(500px);
+    }
+
+    .wall-left {
+      transform: rotateY(-90deg) translateZ(500px);
+    }
+
+    .wall-top {
+      transform: rotateX(90deg) translateZ(500px);
+    }
+
+    .wall-bottom {
+      transform: rotateX(-90deg) translateZ(500px);
+    }
+
+    .wall-back {
+      transform: rotateX(180deg) translateZ(500px);
+    }
+
+    @keyframes move {
+      0% {
+        transform: translateZ(-500px) rotate(0deg);
+      }
+      100% {
+        transform: translateZ(500px) rotate(0deg);
+      }
+    }
+
+    @keyframes fade {
+      0% {
+        opacity: 0;
+      }
+      25% {
+        opacity: 1;
+      }
+      75% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+      }
+    }
+
+  }
+}
 
 .wild-world-bold {
   font-family: 'wild_worldbold', sans-serif;
@@ -149,6 +283,16 @@ html, body {
   50% {
     transform: rotateZ(10deg);
   }
+}
+
+#spaceCanvas {
+  top: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
 }
 
 $shooting-time: 4000ms;
@@ -554,8 +698,37 @@ $shooting-time: 4000ms;
   }
 }
 
+section {
+  $margin: 5rem;
+  margin-top: $margin;
+  margin-bottom: $margin;
+
+  .section-margin {
+    margin-top: $margin;
+    @include for-breakpoint(mobile){
+      margin-top: 2rem;
+    }
+  }
+}
+
+.z-index-0 {
+  z-index: 0;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.stroke-text {
+  color: #111;
+  font-family: 'Work Sans', sans-serif;
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: white;
+}
+
 /*********************************/
 .heading {
+  margin-bottom: 5rem;
   position: relative;
 
   .headline, .sub-headline {
@@ -576,9 +749,10 @@ $shooting-time: 4000ms;
     }
 
     &.astronaut {
-      top: -40px;
-      right: 50px;
+      top: -120px;
+      right: -60px;
       transform: rotate(-20deg);
+      width: 320px;
     }
 
     &.rocket {
@@ -594,6 +768,12 @@ $shooting-time: 4000ms;
       top: -40px;
       right: 50px;
     }
+
+    &.space-rocket-with-astronaut {
+      top: -60px;
+      right: 50px;
+      width: 320px;
+    }
   }
 
   .headline {
@@ -607,9 +787,43 @@ $shooting-time: 4000ms;
     font-size: clamp(12px, 4.5vw, 250px);
     color: #fff;
   }
+  @include for-breakpoint(mobile) {
+    margin-bottom: 3rem;
+
+    img {
+
+      &.ufo {
+        top:-120px;
+      }
+
+      &.astronaut {
+        width: 180px;
+      }
+
+      &.rocket {
+        width: 120px;
+
+      }
+
+      &.pl2 {
+        width: 120px;
+      }
+
+      &.pl3 {
+        width: 120px;
+        right: 0;
+      }
+
+      &.space-rocket-with-astronaut {
+        width: 120px;
+        right: 0;
+      }
+    }
+  }
 }
 
 footer {
+  margin-top: 5rem;
   position: relative;
 
   .container {
@@ -633,9 +847,11 @@ footer {
     background-position: center bottom;
     z-index: -1;
   }
-  h4{
+
+  h4 {
     margin-bottom: 1rem;
   }
+
   ul {
     list-style: none;
     padding-left: 0;
@@ -646,6 +862,18 @@ footer {
       a {
         text-decoration: none;
         color: white;
+      }
+    }
+  }
+  @include for-breakpoint(mobile){
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 15rem;
+    .container {
+      .copyright {
+        text-align: center;
+        position: relative;
+        bottom:0;
       }
     }
   }
@@ -689,7 +917,8 @@ header {
 section.home-banner {
   width: 100%;
   overflow: hidden;
-  height: 100vh;
+  height: calc(100vh - 80px);
+  min-height: 720px;
   position: relative;
 
   h1 span.underline {
@@ -704,7 +933,6 @@ section.home-banner {
     .vector, .arrow, .person {
       position: absolute;
     }
-
 
     .arrow {
       left: -420px;
@@ -725,7 +953,7 @@ section.home-banner {
       .person {
         height: 680px;
         width: auto;
-        left: -320px;
+        left: 30px;
         bottom: 0;
         z-index: 3;
       }
@@ -753,6 +981,52 @@ section.home-banner {
           &._4 {
             left: 340px;
             bottom: 80px;
+          }
+        }
+      }
+    }
+  }
+
+  @include for-breakpoint(mobile) {
+    height: auto;
+    .banner-area {
+      margin-top: 80px;
+      height: 60vh;
+
+      .arrow {
+        left: -380px;
+        height: 80%;
+        width: auto;
+      }
+
+      .person-container {
+        width: 100%;
+
+        .person {
+          height: 520px;
+          left: 0;
+          right: 0;
+          margin: auto;
+        }
+
+        .elements {
+          .vector {
+            &._1 {
+              top: 70px;
+            }
+
+            &._2 {
+              top: 80px;
+              left: 50px;
+            }
+
+            &._3 {
+              left: 40px;
+            }
+
+            &._4 {
+
+            }
           }
         }
       }
@@ -827,348 +1101,416 @@ section#counter {
       }
     }
   }
+
+  @include for-breakpoint(mobile) {
+    .counter-container {
+      flex-direction: column;
+      & > .counter {
+        width: 100%;
+        background-position: center;
+      }
+    }
+  }
 }
 
-#testimonials {
-  $color_1: #3f51b5;
-  $color_2: white;
-  $color_3: black;
-  $color_4: hsl(0, 0%, 81%);
-  $color_5: #49505A;
-  $color_6: #FFFFFF;
-  $color_7: #4B5258;
-  $color_8: #0e0e0e;
-
-  a {
-    &:link {
-      color: $color_1;
-    }
-
-    &:active {
-      color: $color_1;
-    }
-
-    &:visited {
-      color: $color_1;
-    }
-
-    &:hover {
-      color: $color_1;
-    }
-  }
-
-  .outerdiv {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .innerdiv {
-    transform: scale(0.9);
-    display: grid;
-    grid-gap: 1.5rem;
-  }
-
-  .eachdiv {
-    padding: 1rem 2rem;
-    border-radius: 0.8rem;
-    box-shadow: 5px 5px 20px #6d6b6b6b;
-    color: $color_2;
-  }
-
-  .div1 {
-    background: #733FC8;
-    grid-column: 1/3;
-    grid-row: 1/2;
-    /*background-image: url(https://raw.githubusercontent.com/RahulSahOfficial/testimonials_grid_section/5532c958b7d3c9b910a216b198fdd21c73112d84/images/bg-pattern-quotation.svg);
-    background-repeat: no-repeat;
-    background-position-x: 20rem;*/
-  }
-
-  .div2 {
-    background: #49556B;
-    grid-column: 3/4;
-    grid-row: 1/2;
-  }
-
-  .div3 {
-    background: white;
-    grid-column: 4/5;
-    grid-row: 1/3;
-    color: $color_3;
-  }
-
-  .div4 {
-    background: white;
-    grid-column: 1/2;
-    grid-row: 2/3;
-    color: $color_3;
-  }
-
-  .div5 {
-    background: #f40e72;
-    grid-column: 2/4;
-    grid-row: 2/3;
-  }
-
-  .userdetails {
-    display: flex;
-  }
-
-  .imgbox {
-    margin-right: 1rem;
-
-    img {
-      border-radius: 50%;
-      width: 5rem;
-      border: 2px solid #cec5c5;
-    }
-  }
-
-  .detbox {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-    p {
-      margin: 0;
-    }
-
-    .name {
-      color: $color_4;
-      font-size: 0.9rem;
-      margin-bottom: 0.1rem;
-      font-weight: 600;
-    }
-
-    .name.dark {
-      color: $color_5;
-    }
-
-    .designation {
-      color: $color_4;
-      opacity: 50%;
-      font-size: 0.8rem;
-    }
-
-    .website {
-      color: #0e0e0e;
-    }
-
-    .designation.dark {
-      color: $color_5;
-    }
-  }
-
-  .review {
-    h4 {
-      font-size: 1.4rem;
-      color: $color_6;
-      font-weight: 600;
-      line-height: 1.5;
-      margin-bottom: 0.8rem;
-    }
-
-    p {
-      font-size: 0.95rem;
-      color: $color_6;
-      font-weight: 500;
-      opacity: 50%;
-      line-height: 1.5;
-    }
-  }
-
-  .review.dark {
-    h4 {
-      color: $color_7;
-    }
-
-    p {
-      color: $color_8;
-    }
-  }
-
-  .attribution {
-    font-size: 1rem;
-    line-height: 1.5;
-    position: fixed;
-    bottom: 1rem;
-    right: 1rem;
-    text-align: right;
+  #testimonials {
+    $color_1: #3f51b5;
+    $color_2: white;
+    $color_3: black;
+    $color_4: hsl(0, 0%, 81%);
+    $color_5: #49505A;
+    $color_6: #FFFFFF;
+    $color_7: #4B5258;
+    $color_8: #0e0e0e;
 
     a {
-      text-decoration: none;
-    }
-  }
-
-  @media only screen and (max-width: 1000px) {
-    .innerdiv {
-      transform: scale(0.7);
-    }
-  }
-  @media only screen and (max-width: 800px) {
-    .innerdiv {
-      transform: scale(0.6);
-    }
-  }
-  @media only screen and (max-width: 600px) {
-    .div1 {
-      background-position-x: 10rem;
-    }
-    .innerdiv {
-      display: flex;
-      flex-direction: column;
-      transform: scale(1);
-      margin: 2rem;
-      margin-bottom: 5rem;
-    }
-    .attribution {
-      position: relative;
-    }
-  }
-}
-
-#paying {
-  .image-section {
-    position: relative;
-    background: url(./images/elements/oval.svg) no-repeat bottom;
-    background-size: contain;
-    margin: auto;
-    text-align: center;
-
-    .person {
-      width: 280px;
-    }
-  }
-
-  $border-radius: 50px;
-
-  .card {
-    border-radius: $border-radius;
-    transition: 0.2s ease-in-out;
-
-    &:hover {
-      transform: scale(1.2);
-    }
-
-    &.glow-on-hover {
-      &::before, &::after {
-        border-radius: $border-radius;
+      &:link {
+        color: $color_1;
       }
 
-      color: white;
-    }
-  }
-}
+      &:active {
+        color: $color_1;
+      }
 
-section#orbit {
-  position: relative;
+      &:visited {
+        color: $color_1;
+      }
 
-  .space-shuttle, .satellite {
-    position: absolute;
-    z-index: -1;
-  }
-
-  .space-shuttle {
-    &._1 {
-      right: 50%;
+      &:hover {
+        color: $color_1;
+      }
     }
 
-    &._2 {
-      top: 10%;
-      right: 49%;
-    }
-
-    &._3 {
-      top: 6%;
-      right: 45%;
-    }
-  }
-
-  .orbit-logo {
-    position: absolute;
-    z-index: 2;
-  }
-
-  .planet-container {
-    padding-top: 2rem;
-    overflow: hidden;
-    width: 100%;
-    height: 500px;
-    position: relative;
-    display: flex;
-    justify-content: center;
-
-    .planet {
+    .outerdiv {
+      width: 100%;
       display: flex;
       align-items: center;
       justify-content: center;
-      -webkit-box-pack: center;
+    }
 
-      position: absolute;
+    .innerdiv {
+      transform: scale(0.9);
+      display: grid;
+      grid-gap: 1.5rem;
+    }
+
+    .eachdiv {
+      padding: 1rem 2rem;
+      border-radius: 0.8rem;
+      box-shadow: 5px 5px 20px #6d6b6b6b;
+      color: $color_2;
+    }
+
+    .div1 {
+      background: #733FC8;
+      grid-column: 1/3;
+      grid-row: 1/2;
+      /*background-image: url(https://raw.githubusercontent.com/RahulSahOfficial/testimonials_grid_section/5532c958b7d3c9b910a216b198fdd21c73112d84/images/bg-pattern-quotation.svg);
+      background-repeat: no-repeat;
+      background-position-x: 20rem;*/
+    }
+
+    .div2 {
+      background: #49556B;
+      grid-column: 3/4;
+      grid-row: 1/2;
+    }
+
+    .div3 {
+      background: white;
+      grid-column: 4/5;
+      grid-row: 1/3;
+      color: $color_3;
+    }
+
+    .div4 {
+      background: white;
+      grid-column: 1/2;
+      grid-row: 2/3;
+      color: $color_3;
+    }
+
+    .div5 {
+      background: #f40e72;
+      grid-column: 2/4;
+      grid-row: 2/3;
+    }
+
+    .userdetails {
+      display: flex;
+    }
+
+    .imgbox {
+      margin-right: 1rem;
+
+      img {
+        border-radius: 50%;
+        width: 5rem;
+        border: 2px solid #cec5c5;
+      }
+    }
+
+    .detbox {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      p {
+        margin: 0;
+      }
+
+      .name {
+        color: $color_4;
+        font-size: 0.9rem;
+        margin-bottom: 0.1rem;
+        font-weight: 600;
+      }
+
+      .name.dark {
+        color: $color_5;
+      }
+
+      .designation {
+        color: $color_4;
+        opacity: 50%;
+        font-size: 0.8rem;
+      }
+
+      .website {
+        color: #0e0e0e;
+      }
+
+      .designation.dark {
+        color: $color_5;
+      }
+    }
+
+    .review {
+      h4 {
+        font-size: 1.4rem;
+        color: $color_6;
+        font-weight: 600;
+        line-height: 1.5;
+        margin-bottom: 0.8rem;
+      }
+
+      p {
+        font-size: 0.95rem;
+        color: $color_6;
+        font-weight: 500;
+        opacity: 50%;
+        line-height: 1.5;
+      }
+    }
+
+    .review.dark {
+      h4 {
+        color: $color_7;
+      }
+
+      p {
+        color: $color_8;
+      }
+    }
+
+    .attribution {
+      font-size: 1rem;
+      line-height: 1.5;
+      position: fixed;
+      bottom: 1rem;
+      right: 1rem;
+      text-align: right;
+
+      a {
+        text-decoration: none;
+      }
+    }
+
+    @media only screen and (max-width: 1000px) {
+      .innerdiv {
+        transform: scale(0.7);
+      }
+    }
+    @media only screen and (max-width: 800px) {
+      .innerdiv {
+        transform: scale(0.6);
+      }
+    }
+    @media only screen and (max-width: 600px) {
+      .div1 {
+        background-position-x: 10rem;
+      }
+      .innerdiv {
+        display: flex;
+        flex-direction: column;
+        transform: scale(1);
+        margin: 2rem;
+        margin-bottom: 5rem;
+      }
+      .attribution {
+        position: relative;
+      }
+    }
+  }
+
+  #paying {
+    .image-section {
+      position: relative;
+      background: url(./images/elements/oval.svg) no-repeat bottom;
+      background-size: contain;
       margin: auto;
-      $pixels: 200vw;
+      text-align: center;
 
-      &.outer {
-        @for $i from 1 through 3 {
-          &._#{$i} {
-            $radius: $i*12+$pixels;
-            width: $radius;
-            height: $radius;
-            border-radius: $radius;
+      .person {
+        width: 280px;
+      }
+    }
 
-            & > .orbit-logo {
-              left: 0;
-              transform-origin: math.div($radius, 2) 0;
+    $border-radius: 50px;
 
-              img {
-                transform: rotate(270deg);
+    .card {
+      border-radius: $border-radius;
+      transition: 0.2s ease-in-out;
+
+      &:hover {
+        transform: scale(1.2);
+      }
+
+      &.glow-on-hover {
+        &::before, &::after {
+          border-radius: $border-radius;
+        }
+
+        color: white;
+      }
+    }
+    @include for-breakpoint(mobile){
+      #glow-changer{
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
+    }
+  }
+
+  section#orbit {
+
+    .space-shuttle, .satellite {
+      position: absolute;
+      z-index: -1;
+    }
+
+    .space-shuttle {
+      &._1 {
+        right: 50%;
+      }
+
+      &._2 {
+        top: 10%;
+        right: 49%;
+      }
+
+      &._3 {
+        top: 6%;
+        right: 45%;
+      }
+    }
+
+    .orbit-logo {
+      position: absolute;
+      z-index: 2;
+    }
+
+    .planet-container {
+      padding-top: 2rem;
+      overflow: hidden;
+      width: 100%;
+      height: 500px;
+      position: relative;
+      display: flex;
+      justify-content: center;
+
+      .planet {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        -webkit-box-pack: center;
+
+        position: absolute;
+        margin: auto;
+        $pixels: 200vw;
+
+        &.outer {
+          @for $i from 1 through 3 {
+            &._#{$i} {
+              $radius: $i*12+$pixels;
+              width: $radius;
+              height: $radius;
+              border-radius: $radius;
+
+              & > .orbit-logo {
+                left: 0;
+                transform-origin: math.div($radius, 2) 0;
+
+                img {
+                  transform: rotate(270deg);
+                }
               }
             }
           }
         }
-      }
 
-      &.inner {
-        border: 1px solid #fff;
-        $radius: $pixels;
-        width: $pixels;
-        height: $pixels;
-        border-radius: $pixels;
-
-        .sun {
+        &.inner {
+          border: 1px solid #fff;
+          $radius: $pixels;
           width: $pixels;
           height: $pixels;
+          border-radius: $pixels;
 
-          .ray_box {
-            display: none;
+          .sun {
+            width: $pixels;
+            height: $pixels;
+
+            .ray_box {
+              display: none;
+            }
+          }
+
+          img {
+            position: absolute;
+            top: 40px;
+            width: 200px;
           }
         }
+      }
+    }
+    @include for-breakpoint(mobile){
+      .planet-container {
+        height: 50vh;
+        padding-top: 10vh;
 
-        img {
-          position: absolute;
-          top: 40px;
-          width: 200px;
+        .planet {
+          $pixels: 200vw;
+
+          &.outer {
+            @for $i from 1 through 3 {
+              &._#{$i} {
+                $radius: $i*30+$pixels;
+                width: $radius;
+                height: $radius;
+                border-radius: $radius;
+
+                & > .orbit-logo {
+                  left: 0;
+                  transform-origin: math.div($radius, 2) 0;
+                }
+              }
+            }
+          }
+
+          &.inner {
+            $radius: $pixels;
+            width: $pixels;
+            height: $pixels;
+            border-radius: $pixels;
+
+            .sun {
+              width: $pixels;
+              height: $pixels;
+            }
+
+            img {
+              width: 140px;
+            }
+          }
         }
       }
     }
   }
-}
-
-#latest-blog {
-  .rounded-image-effect {
-    border-radius: 20px;
-
-    .text {
-      display: block;
-      top: unset;
-      height: 80px;
-      padding: 18px;
-
-      * {
-        margin: 0;
-      }
+#case-studies{
+  @include for-breakpoint(mobile){
+    .row > .col-12{
+      margin-bottom: 5rem;
     }
   }
 }
+  #latest-blog {
+    .rounded-image-effect {
+      border-radius: 20px;
+
+      .text {
+        display: block;
+        top: unset;
+        height: 80px;
+        padding: 18px;
+
+        * {
+          margin: 0;
+        }
+      }
+    }
+    @include for-breakpoint(mobile){
+      .row > .col-12{
+        margin-bottom: 5rem;
+      }
+    }
+  }

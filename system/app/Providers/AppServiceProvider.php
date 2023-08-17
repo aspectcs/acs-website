@@ -23,5 +23,8 @@ class AppServiceProvider extends ServiceProvider
         Blade::directive('assets', function ($expression) {
             return "<?= asset('assets/'.{$expression}) ?>";
         });
+        Blade::directive('route', function ($expression) {
+            return "<?= route({$expression}) ?>";
+        });
     }
 }

@@ -1,149 +1,68 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="shortcut icon" href="@assets('images/favicon.png')" type="image/x-icon">
-    <title>HOME</title>
-    <link rel="stylesheet" href="@assets('fontawesome/css/all.min.css')">
-    <link rel="stylesheet" href="@assets('node_modules/bootstrap/dist/css/bootstrap.min.css')">
-    {{--    <link rel="stylesheet" href="@assets('pages/home/space.css')">--}}
-    <link rel="stylesheet" href="@assets('style.css')">
-</head>
-<body class="space-body">
-<header class="fixed-top">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
-        <div class="container">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
-                    aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                <a class="navbar-brand" href="#">
-                    <img src="@assets('images/logo-light.png')" width="220" alt="" class="logo-light">
-                    <img src="@assets('images/logo-dark.png')" width="220" alt="" class="logo-dark">
-                </a>
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Site Audit</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Discovery Page</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Blog</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
-                    </li>
-                </ul>
-            </div>
+@extends('layout.app')
+@section('content')
+    <section class="container" id="services">
+        <div class="heading" aria-hidden="true">
+            <p class="headline">Our Awesome Services</p>
+            <p class="sub-headline">Client Reviews That Leave Us in Awe!</p>
         </div>
-    </nav>
-</header>
-<section class="services">
-
-</section>
-<footer>
-    <div class="container">
         <div class="row">
-            <div class="col-12 col-md-2">
-                <h4 class="glow-text">Services</h4>
-
-                <ul>
-                    <li>
-                        <a href=""> Website Development</a>
-                    </li>
-                    <li>
-                        <a href=""> Internet Marketing</a>
-                    </li>
-                    <li>
-                        <a href=""> Web Applications</a>
-                    </li>
-                    <li>
-                        <a href="">Mobile Apps</a>
-                    </li>
-                </ul>
+            <div class="col-12 col-md-4">
+                <img src="https://dummyimage.com/400x400/fff/000" class="img-fluid" alt="">
             </div>
-            <div class="col-12 col-md-2">
-                <h4 class="glow-text">Services</h4>
-
-                <ul>
-                    <li>
-                        <a href=""> Website Development</a>
-                    </li>
-                    <li>
-                        <a href=""> Internet Marketing</a>
-                    </li>
-                    <li>
-                        <a href=""> Web Applications</a>
-                    </li>
-                    <li>
-                        <a href="">Mobile Apps</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-12 col-md-2">
-                <h4 class="glow-text">Services</h4>
-
-                <ul>
-                    <li>
-                        <a href=""> Website Development</a>
-                    </li>
-                    <li>
-                        <a href=""> Internet Marketing</a>
-                    </li>
-                    <li>
-                        <a href=""> Web Applications</a>
-                    </li>
-                    <li>
-                        <a href="">Mobile Apps</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-12 col-md-3"></div>
-            <div class="col-12 col-md-3">
-                <h4 class="glow-text">Get in touch</h4>
-                <h5 class="fw-bold">
-                    Aspect Creative Solutions
-                </h5>
-                <p>
-                    F-305, Dreams Mall,
-                    L.B.S. Marg, Bhandup (West)
-                    Mumbai - 400078
-                </p>
-
-                <p>
-                    Email: <a href="mail:info@aspectcs.com">info@aspectcs.com</a>
-                    <br>
-                    Phone: <a href="tel:+91 98195 82500">+91 98195 82500</a>
-                </p>
+            <div class="col-12 col-md-8">
+                <h3 class="display-4 stroke-text">Search Engine Optimization</h3>
+                <p class="h5 text-justify">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                    printer took a galley of type and scrambled it to make a type specimen book. It has survived not
+                    only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                    It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                    and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem
+                    Ipsum.</p>
+                <div class="my-5 text-center">
+                    <button class="glow-on-hover active btn btn-dark text-uppercase btn-lg">Book a Discovery Call <i
+                            class="ms-2 fa-brands fa-searchengin fa-bounce"></i></button>
+                </div>
             </div>
         </div>
-        <div class="copyright">
-            Copyright &copy; 2023 All rights reserved.
+        <div class="row section-margin">
+            <div class="col-12 col-md-4 order-2">
+                <img src="https://dummyimage.com/400x400/fff/000" class="img-fluid" alt="">
+            </div>
+            <div class="col-12 col-md-8 order-1">
+                <h3 class="display-4 stroke-text">Website Design</h3>
+                <p class="h5 text-justify">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                    printer took a galley of type and scrambled it to make a type specimen book. It has survived not
+                    only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                    It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                    and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem
+                    Ipsum.</p>
+                <div class="my-5 text-center">
+                    <button class="glow-on-hover active btn btn-dark text-uppercase btn-lg">Book a Discovery Call <i
+                            class="ms-2 fa-brands fa-searchengin fa-bounce"></i></button>
+                </div>
+            </div>
         </div>
-    </div>
-    <div class="landscape"></div>
-</footer>
-<div id="particles-js"></div>
-
-<script src="@assets('node_modules/gsap/dist/gsap.min.js')"></script>
-<script src="@assets('node_modules/gsap/dist/ScrollTrigger.min.js')"></script>
-<script src="@assets('node_modules/gsap/dist/MotionPathPlugin.min.js')"></script>
-<script src="@assets('node_modules/jquery/dist/jquery.min.js')"></script>
-<script src="@assets('node_modules/bootstrap/dist/js/bootstrap.min.js')"></script>
-
-<script src="@assets('node_modules/particles.js/particles.js')"></script>
-<script src="@assets('script.js')"></script>
-<script src="@assets('pages/home/space.js')"></script>
-</body>
-</html>
+        <div class="row section-margin">
+            <div class="col-12 col-md-4">
+                <img src="https://dummyimage.com/400x400/fff/000" class="img-fluid" alt="">
+            </div>
+            <div class="col-12 col-md-8">
+                <h3 class="display-4 stroke-text">Web Development</h3>
+                <p class="h5 text-justify">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                    printer took a galley of type and scrambled it to make a type specimen book. It has survived not
+                    only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                    It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                    and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem
+                    Ipsum.</p>
+                <div class="my-5 text-center">
+                    <button class="glow-on-hover active btn btn-dark text-uppercase btn-lg">Book a Discovery Call <i
+                            class="ms-2 fa-brands fa-searchengin fa-bounce"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    @include('chunks.case-studies')
+    @include('chunks.latest-blog')
+@endsection
