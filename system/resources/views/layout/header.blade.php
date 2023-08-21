@@ -20,8 +20,14 @@
                     <li class="nav-item">
                         <a class="nav-link" href="@route('services')">Services</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="aboutDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" href="#">About</a>
+                        <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                            <li><a class="dropdown-item" href="@route('about.our-stories')">Our Story</a></li>
+                            <li><a class="dropdown-item" href="@route('about.core-values')">Core Values</a></li>
+                            <li><a class="dropdown-item" href="@route('about.team')">Team</a></li>
+                            <li><a class="dropdown-item" href="@route('about.partnerships')">Partnerships</a></li>
+                        </ul>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Blog</a>

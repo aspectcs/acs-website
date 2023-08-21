@@ -1,22 +1,27 @@
 /********************************************************/
 /* Media Queries  Not necessarily correct, edit these at will*/
 /********************************************************/
-@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;700;800&family=Work+Sans:wght@400;700;800&family=Roboto:wght@400;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Roboto:wght@400;700;800&display=swap");
 :root {
   --cursor-default: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='26' height='31' fill='none' viewBox='0 0 26 31'%3E%3Cpath fill='%23fff' fill-rule='evenodd' stroke='%23010101' stroke-linecap='square' stroke-width='2.5' d='M21.993 14.425 2.549 2.935l4.444 23.108 4.653-10.002 10.347-1.616Z' clip-rule='evenodd'/%3E%3C/svg%3E"), auto;
+  --color-pink: #bb1c94;
 }
 
-/*font-family: 'Plus Jakarta Sans', sans-serif;
-font-family: 'Work Sans', sans-serif;*/
 html, body {
-  font-family: "Work Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
   cursor: var(--cursor-default) !important;
   overflow-x: hidden;
 }
 
 @font-face {
   font-family: "wild_worldbold";
-  src: url(./fonts/wild-world.otf) format("otf");
+  src: url(./fonts/wild-world.otf);
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "d3euronism";
+  src: url(./fonts/d3euronism/D3Euronism_b.ttf);
   font-weight: normal;
   font-style: normal;
 }
@@ -111,14 +116,6 @@ html, body {
   font-family: "wild_worldbold", sans-serif;
 }
 
-.plus-jakarta-sans {
-  font-family: "Plus Jakarta Sans", sans-serif;
-}
-
-.work-sans {
-  font-family: "Work Sans", sans-serif;
-}
-
 /*************Glow Button****************/
 .glow-on-hover {
   /*width: 220px;
@@ -170,7 +167,6 @@ html, body {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: #111;
   left: 0;
   top: 0;
   border-radius: 10px;
@@ -275,164 +271,164 @@ html, body {
   animation: shining 4000ms ease-in-out infinite;
 }
 .shooting_star:nth-child(1) {
-  top: calc(50% - 157px);
-  left: calc(50% - 123px);
-  animation-delay: 7793ms;
+  top: calc(50% - -87px);
+  left: calc(50% - 99px);
+  animation-delay: 3375ms;
 }
 .shooting_star:nth-child(1)::before, .shooting_star:nth-child(1)::after {
-  animation-delay: 7793ms;
+  animation-delay: 3375ms;
 }
 .shooting_star:nth-child(2) {
-  top: calc(50% - -42px);
-  left: calc(50% - 298px);
-  animation-delay: 6973ms;
+  top: calc(50% - -70px);
+  left: calc(50% - 144px);
+  animation-delay: 4052ms;
 }
 .shooting_star:nth-child(2)::before, .shooting_star:nth-child(2)::after {
-  animation-delay: 6973ms;
+  animation-delay: 4052ms;
 }
 .shooting_star:nth-child(3) {
-  top: calc(50% - -41px);
-  left: calc(50% - 274px);
-  animation-delay: 3120ms;
+  top: calc(50% - 31px);
+  left: calc(50% - 34px);
+  animation-delay: 5250ms;
 }
 .shooting_star:nth-child(3)::before, .shooting_star:nth-child(3)::after {
-  animation-delay: 3120ms;
+  animation-delay: 5250ms;
 }
 .shooting_star:nth-child(4) {
-  top: calc(50% - -59px);
-  left: calc(50% - 300px);
-  animation-delay: 369ms;
+  top: calc(50% - -191px);
+  left: calc(50% - 150px);
+  animation-delay: 4832ms;
 }
 .shooting_star:nth-child(4)::before, .shooting_star:nth-child(4)::after {
-  animation-delay: 369ms;
+  animation-delay: 4832ms;
 }
 .shooting_star:nth-child(5) {
-  top: calc(50% - -32px);
-  left: calc(50% - 30px);
-  animation-delay: 1855ms;
+  top: calc(50% - -81px);
+  left: calc(50% - 136px);
+  animation-delay: 6630ms;
 }
 .shooting_star:nth-child(5)::before, .shooting_star:nth-child(5)::after {
-  animation-delay: 1855ms;
+  animation-delay: 6630ms;
 }
 .shooting_star:nth-child(6) {
-  top: calc(50% - 169px);
-  left: calc(50% - 198px);
-  animation-delay: 6925ms;
+  top: calc(50% - -83px);
+  left: calc(50% - 62px);
+  animation-delay: 2227ms;
 }
 .shooting_star:nth-child(6)::before, .shooting_star:nth-child(6)::after {
-  animation-delay: 6925ms;
+  animation-delay: 2227ms;
 }
 .shooting_star:nth-child(7) {
-  top: calc(50% - -186px);
-  left: calc(50% - 1px);
-  animation-delay: 1094ms;
+  top: calc(50% - -93px);
+  left: calc(50% - 289px);
+  animation-delay: 8445ms;
 }
 .shooting_star:nth-child(7)::before, .shooting_star:nth-child(7)::after {
-  animation-delay: 1094ms;
+  animation-delay: 8445ms;
 }
 .shooting_star:nth-child(8) {
-  top: calc(50% - 43px);
-  left: calc(50% - 48px);
-  animation-delay: 6982ms;
+  top: calc(50% - -4px);
+  left: calc(50% - 71px);
+  animation-delay: 6755ms;
 }
 .shooting_star:nth-child(8)::before, .shooting_star:nth-child(8)::after {
-  animation-delay: 6982ms;
+  animation-delay: 6755ms;
 }
 .shooting_star:nth-child(9) {
-  top: calc(50% - 137px);
-  left: calc(50% - 54px);
-  animation-delay: 4694ms;
+  top: calc(50% - 33px);
+  left: calc(50% - 33px);
+  animation-delay: 9484ms;
 }
 .shooting_star:nth-child(9)::before, .shooting_star:nth-child(9)::after {
-  animation-delay: 4694ms;
+  animation-delay: 9484ms;
 }
 .shooting_star:nth-child(10) {
-  top: calc(50% - -155px);
-  left: calc(50% - 8px);
-  animation-delay: 1817ms;
+  top: calc(50% - 25px);
+  left: calc(50% - 85px);
+  animation-delay: 3095ms;
 }
 .shooting_star:nth-child(10)::before, .shooting_star:nth-child(10)::after {
-  animation-delay: 1817ms;
+  animation-delay: 3095ms;
 }
 .shooting_star:nth-child(11) {
-  top: calc(50% - 24px);
-  left: calc(50% - 90px);
-  animation-delay: 4008ms;
+  top: calc(50% - -161px);
+  left: calc(50% - 164px);
+  animation-delay: 5341ms;
 }
 .shooting_star:nth-child(11)::before, .shooting_star:nth-child(11)::after {
-  animation-delay: 4008ms;
+  animation-delay: 5341ms;
 }
 .shooting_star:nth-child(12) {
-  top: calc(50% - -46px);
-  left: calc(50% - 175px);
-  animation-delay: 2692ms;
+  top: calc(50% - 143px);
+  left: calc(50% - 116px);
+  animation-delay: 7470ms;
 }
 .shooting_star:nth-child(12)::before, .shooting_star:nth-child(12)::after {
-  animation-delay: 2692ms;
+  animation-delay: 7470ms;
 }
 .shooting_star:nth-child(13) {
-  top: calc(50% - -153px);
-  left: calc(50% - 2px);
-  animation-delay: 9582ms;
+  top: calc(50% - 78px);
+  left: calc(50% - 238px);
+  animation-delay: 4219ms;
 }
 .shooting_star:nth-child(13)::before, .shooting_star:nth-child(13)::after {
-  animation-delay: 9582ms;
+  animation-delay: 4219ms;
 }
 .shooting_star:nth-child(14) {
-  top: calc(50% - 109px);
-  left: calc(50% - 250px);
-  animation-delay: 9315ms;
+  top: calc(50% - 196px);
+  left: calc(50% - 24px);
+  animation-delay: 5024ms;
 }
 .shooting_star:nth-child(14)::before, .shooting_star:nth-child(14)::after {
-  animation-delay: 9315ms;
+  animation-delay: 5024ms;
 }
 .shooting_star:nth-child(15) {
-  top: calc(50% - -157px);
-  left: calc(50% - 283px);
-  animation-delay: 9936ms;
+  top: calc(50% - 87px);
+  left: calc(50% - 240px);
+  animation-delay: 3376ms;
 }
 .shooting_star:nth-child(15)::before, .shooting_star:nth-child(15)::after {
-  animation-delay: 9936ms;
+  animation-delay: 3376ms;
 }
 .shooting_star:nth-child(16) {
-  top: calc(50% - -157px);
-  left: calc(50% - 296px);
-  animation-delay: 6218ms;
+  top: calc(50% - 163px);
+  left: calc(50% - 281px);
+  animation-delay: 2048ms;
 }
 .shooting_star:nth-child(16)::before, .shooting_star:nth-child(16)::after {
-  animation-delay: 6218ms;
+  animation-delay: 2048ms;
 }
 .shooting_star:nth-child(17) {
-  top: calc(50% - -148px);
-  left: calc(50% - 227px);
-  animation-delay: 6346ms;
+  top: calc(50% - -16px);
+  left: calc(50% - 203px);
+  animation-delay: 6372ms;
 }
 .shooting_star:nth-child(17)::before, .shooting_star:nth-child(17)::after {
-  animation-delay: 6346ms;
+  animation-delay: 6372ms;
 }
 .shooting_star:nth-child(18) {
-  top: calc(50% - 107px);
-  left: calc(50% - 141px);
-  animation-delay: 4738ms;
+  top: calc(50% - 158px);
+  left: calc(50% - 222px);
+  animation-delay: 5618ms;
 }
 .shooting_star:nth-child(18)::before, .shooting_star:nth-child(18)::after {
-  animation-delay: 4738ms;
+  animation-delay: 5618ms;
 }
 .shooting_star:nth-child(19) {
-  top: calc(50% - 76px);
-  left: calc(50% - 164px);
-  animation-delay: 6396ms;
+  top: calc(50% - -162px);
+  left: calc(50% - 201px);
+  animation-delay: 8218ms;
 }
 .shooting_star:nth-child(19)::before, .shooting_star:nth-child(19)::after {
-  animation-delay: 6396ms;
+  animation-delay: 8218ms;
 }
 .shooting_star:nth-child(20) {
   top: calc(50% - 131px);
-  left: calc(50% - 249px);
-  animation-delay: 3620ms;
+  left: calc(50% - 80px);
+  animation-delay: 1710ms;
 }
 .shooting_star:nth-child(20)::before, .shooting_star:nth-child(20)::after {
-  animation-delay: 3620ms;
+  animation-delay: 1710ms;
 }
 
 @keyframes tail {
@@ -591,7 +587,6 @@ html, body {
   height: 70px;
   border-radius: 50%;
   background: white;
-  opacity: 0.9;
   box-shadow: 0px 0px 40px 15px white;
 }
 .sun .ray_box {
@@ -747,9 +742,14 @@ section .section-margin {
 
 .stroke-text {
   color: #111;
-  font-family: "Work Sans", sans-serif;
   -webkit-text-stroke-width: 1.5px;
   -webkit-text-stroke-color: white;
+  text-transform: uppercase;
+  font-family: "wild_worldbold", sans-serif;
+}
+
+.sun-rays {
+  box-shadow: 0px 0px 40px 15px white;
 }
 
 /*********************************/
@@ -758,7 +758,6 @@ section .section-margin {
   position: relative;
 }
 .heading .headline, .heading .sub-headline {
-  font-family: "wild_worldbold", serif;
   text-align: center;
   line-height: 1.2;
   margin: 0;
@@ -794,13 +793,15 @@ section .section-margin {
   width: 320px;
 }
 .heading .headline {
-  font-size: clamp(12px, 8.5vw, 250px);
+  text-transform: uppercase;
+  font-family: "wild_worldbold", sans-serif;
+  font-size: clamp(12px, 8.5vw, 50px);
   color: #111;
   -webkit-text-stroke-width: 1.5px;
   -webkit-text-stroke-color: white;
 }
 .heading .sub-headline {
-  font-size: clamp(12px, 4.5vw, 250px);
+  font-size: clamp(12px, 4.5vw, 25px);
   color: #fff;
 }
 @media only screen and (max-width: 667px) {
@@ -899,6 +900,21 @@ header:not(.stuck) .logo-dark {
 header:not(.stuck) nav.navbar .nav-link {
   --bs-nav-link-color: rgba(255, 255, 255);
 }
+@media only screen and (min-width: 1281px) {
+  header ul.navbar-nav > li.nav-item {
+    margin-left: 2rem;
+  }
+  header ul.navbar-nav > li.nav-item .nav-link {
+    --bs-nav-link-font-size: 1rem;
+  }
+  header ul.navbar-nav > li.nav-item .dropdown-menu {
+    --bs-border-radius: 0;
+    --bs-body-bg: #111;
+    --bs-dropdown-link-color: white;
+    --bs-dropdown-link-hover-color: white;
+    --bs-dropdown-link-hover-bg: var(--color-pink);
+  }
+}
 
 section.home-banner {
   width: 100%;
@@ -906,6 +922,11 @@ section.home-banner {
   height: calc(100vh - 80px);
   min-height: 720px;
   position: relative;
+}
+section.home-banner h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+  line-height: 1.4;
 }
 section.home-banner h1 span.underline {
   border-bottom: 8px solid #f30c73;
@@ -938,24 +959,46 @@ section.home-banner .banner-area .person-container .person {
   z-index: 3;
 }
 section.home-banner .banner-area .person-container .elements .vector {
-  width: 80px;
+  text-shadow: 0 0 50px #ffffff, 0 0 100px #ffffff, 0 0 150px #ffffff, 0 0 200px #ffffff;
+  animation: animate_vector 4s ease-in-out infinite;
+  opacity: 1;
   z-index: 2;
 }
 section.home-banner .banner-area .person-container .elements .vector._1 {
-  left: 320px;
-  top: 50px;
+  right: 173px;
+  top: -12px;
+  animation-delay: 2s;
 }
 section.home-banner .banner-area .person-container .elements .vector._2 {
   left: 300px;
   top: 200px;
+  animation-delay: 3s;
 }
 section.home-banner .banner-area .person-container .elements .vector._3 {
   left: 0;
   top: 240px;
+  animation-delay: 4s;
 }
 section.home-banner .banner-area .person-container .elements .vector._4 {
-  left: 340px;
+  right: 180px;
   bottom: 80px;
+  animation-delay: 5s;
+}
+@keyframes animate_vector {
+  0% {
+    text-shadow: 0 0 50px #ffffff, 0 0 100px #ffffff, 0 0 150px #ffffff, 0 0 200px #ffffff;
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-20px);
+  }
+  80% {
+    text-shadow: 0 0 0 #ffffff, 0 0 0 #ffffff, 0 0 0 #ffffff, 0 0 0 #ffffff;
+  }
+  100% {
+    text-shadow: 0 0 50px #ffffff, 0 0 100px #ffffff, 0 0 150px #ffffff, 0 0 200px #ffffff;
+    transform: translatey(0px);
+  }
 }
 @media only screen and (max-width: 667px) {
   section.home-banner {
@@ -981,10 +1024,12 @@ section.home-banner .banner-area .person-container .elements .vector._4 {
   }
   section.home-banner .banner-area .person-container .elements .vector._1 {
     top: 70px;
+    right: 0;
   }
   section.home-banner .banner-area .person-container .elements .vector._2 {
-    top: 80px;
-    left: 50px;
+    top: 280px;
+    right: 140px;
+    left: unset;
   }
   section.home-banner .banner-area .person-container .elements .vector._3 {
     left: 40px;
@@ -1152,14 +1197,13 @@ section#counter .counter-container > .counter.ellipse-blue .text {
   color: #49505A;
 }
 #testimonials .review h4 {
-  font-size: 1.4rem;
   color: #FFFFFF;
   font-weight: 600;
   line-height: 1.5;
   margin-bottom: 0.8rem;
 }
 #testimonials .review p {
-  font-size: 0.95rem;
+  font-size: 1rem;
   color: #FFFFFF;
   font-weight: 500;
   opacity: 50%;
@@ -1275,50 +1319,50 @@ section#orbit .planet-container .planet {
   margin: auto;
 }
 section#orbit .planet-container .planet.outer._1 {
-  width: 212vw;
-  height: 212vw;
-  border-radius: 212vw;
+  width: 312vw;
+  height: 312vw;
+  border-radius: 312vw;
 }
 section#orbit .planet-container .planet.outer._1 > .orbit-logo {
   left: 0;
-  transform-origin: 106vw 0;
+  transform-origin: 156vw 0;
 }
 section#orbit .planet-container .planet.outer._1 > .orbit-logo img {
   transform: rotate(270deg);
 }
 section#orbit .planet-container .planet.outer._2 {
-  width: 224vw;
-  height: 224vw;
-  border-radius: 224vw;
+  width: 324vw;
+  height: 324vw;
+  border-radius: 324vw;
 }
 section#orbit .planet-container .planet.outer._2 > .orbit-logo {
   left: 0;
-  transform-origin: 112vw 0;
+  transform-origin: 162vw 0;
 }
 section#orbit .planet-container .planet.outer._2 > .orbit-logo img {
   transform: rotate(270deg);
 }
 section#orbit .planet-container .planet.outer._3 {
-  width: 236vw;
-  height: 236vw;
-  border-radius: 236vw;
+  width: 336vw;
+  height: 336vw;
+  border-radius: 336vw;
 }
 section#orbit .planet-container .planet.outer._3 > .orbit-logo {
   left: 0;
-  transform-origin: 118vw 0;
+  transform-origin: 168vw 0;
 }
 section#orbit .planet-container .planet.outer._3 > .orbit-logo img {
   transform: rotate(270deg);
 }
 section#orbit .planet-container .planet.inner {
   border: 1px solid #fff;
-  width: 200vw;
-  height: 200vw;
-  border-radius: 200vw;
+  width: 300vw;
+  height: 300vw;
+  border-radius: 300vw;
 }
 section#orbit .planet-container .planet.inner .sun {
-  width: 200vw;
-  height: 200vw;
+  width: 300vw;
+  height: 300vw;
 }
 section#orbit .planet-container .planet.inner .sun .ray_box {
   display: none;
@@ -1327,6 +1371,15 @@ section#orbit .planet-container .planet.inner img {
   position: absolute;
   top: 40px;
   width: 200px;
+}
+section#orbit .contact-us {
+  min-height: 200px;
+  background: white;
+  opacity: 1;
+  box-shadow: 0px 0px 40px 15px white;
+}
+section#orbit .contact-us .h1 {
+  font-family: "wild_worldbold", sans-serif;
 }
 @media only screen and (max-width: 667px) {
   section#orbit .planet-container {

@@ -1,7 +1,7 @@
 @use "sass:math";
 
 /********************************************************/
-$size__site_content_width: 1024px;
+$size__site_content_width: 1280px;
 
 /* Media Queries  Not necessarily correct, edit these at will*/
 $media_queries: (
@@ -31,18 +31,18 @@ $media_queries: (
 }
 
 /********************************************************/
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;700;800&family=Work+Sans:wght@400;700;800&family=Roboto:wght@400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Roboto:wght@400;700;800&display=swap');
 
 :root {
   --cursor-default: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='26' height='31' fill='none' viewBox='0 0 26 31'%3E%3Cpath fill='%23fff' fill-rule='evenodd' stroke='%23010101' stroke-linecap='square' stroke-width='2.5' d='M21.993 14.425 2.549 2.935l4.444 23.108 4.653-10.002 10.347-1.616Z' clip-rule='evenodd'/%3E%3C/svg%3E"), auto;
+  --color-pink: #bb1c94;
 }
 
 $color-platter: #6435cb, #bb1c94, #a324a4, #ce1789, #e6147c, #842cbc, #8f2cb1, #b41e9c, #c41c94, #f30c73, #dc1484, #9424ac, #842cb4, #7c2cbc, #742cbc, #ec24b4, #a428a8, #a428a8;
 
-/*font-family: 'Plus Jakarta Sans', sans-serif;
-font-family: 'Work Sans', sans-serif;*/
+
 html, body {
-  font-family: 'Work Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   cursor: var(--cursor-default) !important;
   overflow-x: hidden;
 }
@@ -50,7 +50,15 @@ html, body {
 
 @font-face {
   font-family: "wild_worldbold";
-  src: url(./fonts/wild-world.otf) format("otf");
+  src: url(./fonts/wild-world.otf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: "d3euronism";
+  src: url(./fonts/d3euronism/D3Euronism_b.ttf);
   font-weight: normal;
   font-style: normal;
 }
@@ -163,14 +171,6 @@ html, body {
   font-family: 'wild_worldbold', sans-serif;
 }
 
-.plus-jakarta-sans {
-  font-family: 'Plus Jakarta Sans', sans-serif;
-}
-
-.work-sans {
-  font-family: 'Work Sans', sans-serif;
-}
-
 /*************Glow Button****************/
 .glow-on-hover {
   /*width: 220px;
@@ -229,7 +229,8 @@ html, body {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: #111;
+    //background: #111;
+    //background: #d21787;
     left: 0;
     top: 0;
     border-radius: 10px;
@@ -545,7 +546,7 @@ $shooting-time: 4000ms;
   height: 70px;
   border-radius: 50%;
   background: white;
-  opacity: 0.9;
+  //opacity: 0.9;
   box-shadow: 0px 0px 40px 15px white;
 
 
@@ -705,7 +706,7 @@ section {
 
   .section-margin {
     margin-top: $margin;
-    @include for-breakpoint(mobile){
+    @include for-breakpoint(mobile) {
       margin-top: 2rem;
     }
   }
@@ -721,9 +722,15 @@ section {
 
 .stroke-text {
   color: #111;
-  font-family: 'Work Sans', sans-serif;
   -webkit-text-stroke-width: 1.5px;
   -webkit-text-stroke-color: white;
+
+  text-transform: uppercase;
+  font-family: 'wild_worldbold', sans-serif;
+}
+
+.sun-rays{
+  box-shadow: 0px 0px 40px 15px white;
 }
 
 /*********************************/
@@ -732,7 +739,6 @@ section {
   position: relative;
 
   .headline, .sub-headline {
-    font-family: "wild_worldbold", serif;
     //font-size: 15.5vw;
     text-align: center;
     line-height: 1.2;
@@ -777,23 +783,26 @@ section {
   }
 
   .headline {
-    font-size: clamp(12px, 8.5vw, 250px);
+    text-transform: uppercase;
+    font-family: 'wild_worldbold', sans-serif;
+    font-size: clamp(12px, 8.5vw, 50px);
     color: #111;
     -webkit-text-stroke-width: 1.5px;
     -webkit-text-stroke-color: white;
   }
 
   .sub-headline {
-    font-size: clamp(12px, 4.5vw, 250px);
+    font-size: clamp(12px, 4.5vw, 25px);
     color: #fff;
   }
+
   @include for-breakpoint(mobile) {
     margin-bottom: 3rem;
 
     img {
 
       &.ufo {
-        top:-120px;
+        top: -120px;
       }
 
       &.astronaut {
@@ -865,7 +874,8 @@ footer {
       }
     }
   }
-  @include for-breakpoint(mobile){
+
+  @include for-breakpoint(mobile) {
     padding-left: 3rem;
     padding-right: 3rem;
     padding-bottom: 15rem;
@@ -873,7 +883,7 @@ footer {
       .copyright {
         text-align: center;
         position: relative;
-        bottom:0;
+        bottom: 0;
       }
     }
   }
@@ -912,6 +922,26 @@ header {
       }
     }
   }
+
+  @include for-breakpoint(desktop) {
+    ul.navbar-nav {
+      & > li.nav-item {
+        margin-left: 2rem;
+
+        .nav-link {
+          --bs-nav-link-font-size: 1rem;
+        }
+
+        .dropdown-menu {
+          --bs-border-radius: 0;
+          --bs-body-bg: #111;
+          --bs-dropdown-link-color: white;
+          --bs-dropdown-link-hover-color: white;
+          --bs-dropdown-link-hover-bg: var(--color-pink);
+        }
+      }
+    }
+  }
 }
 
 section.home-banner {
@@ -921,8 +951,14 @@ section.home-banner {
   min-height: 720px;
   position: relative;
 
-  h1 span.underline {
-    border-bottom: 8px solid #f30c73;
+  h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    line-height: 1.4;
+
+    span.underline {
+      border-bottom: 8px solid #f30c73;
+    }
   }
 
   .skew {
@@ -960,28 +996,55 @@ section.home-banner {
 
       .elements {
         .vector {
-          width: 80px;
+          text-shadow: 0 0 50px #ffffff, 0 0 100px #ffffff, 0 0 150px #ffffff, 0 0 200px #ffffff;
+          animation: animate_vector 4s ease-in-out infinite;
+          opacity: 1;
+          //width: 80px;
           z-index: 2;
 
           &._1 {
-            left: 320px;
-            top: 50px;
+            right: 173px;
+            top: -12px;
+            animation-delay: 2s;
           }
 
           &._2 {
             left: 300px;
             top: 200px;
+            animation-delay: 3s;
           }
 
           &._3 {
             left: 0;
             top: 240px;
+            animation-delay: 4s;
           }
 
           &._4 {
-            left: 340px;
+            right: 180px;
             bottom: 80px;
+            animation-delay: 5s;
           }
+
+
+
+          @keyframes animate_vector {
+            0% {
+              text-shadow: 0 0 50px #ffffff, 0 0 100px #ffffff, 0 0 150px #ffffff, 0 0 200px #ffffff;
+              transform: translatey(0px);
+            }
+            50% {
+              transform: translatey(-20px);
+            }
+            80%{
+              text-shadow: 0 0 0 #ffffff, 0 0 0 #ffffff, 0 0 0 #ffffff, 0 0 0 #ffffff;
+            }
+            100% {
+              text-shadow: 0 0 50px #ffffff, 0 0 100px #ffffff, 0 0 150px #ffffff, 0 0 200px #ffffff;
+              transform: translatey(0px);
+            }
+          }
+
         }
       }
     }
@@ -1013,11 +1076,13 @@ section.home-banner {
           .vector {
             &._1 {
               top: 70px;
+              right: 0;
             }
 
             &._2 {
-              top: 80px;
-              left: 50px;
+              top: 280px;
+              right: 140px;
+              left: unset;
             }
 
             &._3 {
@@ -1105,6 +1170,7 @@ section#counter {
   @include for-breakpoint(mobile) {
     .counter-container {
       flex-direction: column;
+
       & > .counter {
         width: 100%;
         background-position: center;
@@ -1113,296 +1179,361 @@ section#counter {
   }
 }
 
-  #testimonials {
-    $color_1: #3f51b5;
-    $color_2: white;
-    $color_3: black;
-    $color_4: hsl(0, 0%, 81%);
-    $color_5: #49505A;
-    $color_6: #FFFFFF;
-    $color_7: #4B5258;
-    $color_8: #0e0e0e;
+#testimonials {
+  $color_1: #3f51b5;
+  $color_2: white;
+  $color_3: black;
+  $color_4: hsl(0, 0%, 81%);
+  $color_5: #49505A;
+  $color_6: #FFFFFF;
+  $color_7: #4B5258;
+  $color_8: #0e0e0e;
 
-    a {
-      &:link {
-        color: $color_1;
-      }
-
-      &:active {
-        color: $color_1;
-      }
-
-      &:visited {
-        color: $color_1;
-      }
-
-      &:hover {
-        color: $color_1;
-      }
+  a {
+    &:link {
+      color: $color_1;
     }
 
-    .outerdiv {
-      width: 100%;
+    &:active {
+      color: $color_1;
+    }
+
+    &:visited {
+      color: $color_1;
+    }
+
+    &:hover {
+      color: $color_1;
+    }
+  }
+
+  .outerdiv {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .innerdiv {
+    transform: scale(0.9);
+    display: grid;
+    grid-gap: 1.5rem;
+  }
+
+  .eachdiv {
+    padding: 1rem 2rem;
+    border-radius: 0.8rem;
+    box-shadow: 5px 5px 20px #6d6b6b6b;
+    color: $color_2;
+  }
+
+  .div1 {
+    background: #733FC8;
+    grid-column: 1/3;
+    grid-row: 1/2;
+    /*background-image: url(https://raw.githubusercontent.com/RahulSahOfficial/testimonials_grid_section/5532c958b7d3c9b910a216b198fdd21c73112d84/images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position-x: 20rem;*/
+  }
+
+  .div2 {
+    background: #49556B;
+    grid-column: 3/4;
+    grid-row: 1/2;
+  }
+
+  .div3 {
+    background: white;
+    grid-column: 4/5;
+    grid-row: 1/3;
+    color: $color_3;
+  }
+
+  .div4 {
+    background: white;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    color: $color_3;
+  }
+
+  .div5 {
+    background: #f40e72;
+    grid-column: 2/4;
+    grid-row: 2/3;
+  }
+
+  .userdetails {
+    display: flex;
+  }
+
+  .imgbox {
+    margin-right: 1rem;
+
+    img {
+      border-radius: 50%;
+      width: 5rem;
+      border: 2px solid #cec5c5;
+    }
+  }
+
+  .detbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    p {
+      margin: 0;
+    }
+
+    .name {
+      color: $color_4;
+      font-size: 0.9rem;
+      margin-bottom: 0.1rem;
+      font-weight: 600;
+    }
+
+    .name.dark {
+      color: $color_5;
+    }
+
+    .designation {
+      color: $color_4;
+      opacity: 50%;
+      font-size: 0.8rem;
+    }
+
+    .website {
+      color: #0e0e0e;
+    }
+
+    .designation.dark {
+      color: $color_5;
+    }
+  }
+
+  .review {
+    h4 {
+      color: $color_6;
+      font-weight: 600;
+      line-height: 1.5;
+      margin-bottom: 0.8rem;
+    }
+
+    p {
+      font-size: 1rem;
+      color: $color_6;
+      font-weight: 500;
+      opacity: 50%;
+      line-height: 1.5;
+    }
+  }
+
+  .review.dark {
+    h4 {
+      color: $color_7;
+    }
+
+    p {
+      color: $color_8;
+    }
+  }
+
+  .attribution {
+    font-size: 1rem;
+    line-height: 1.5;
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    text-align: right;
+
+    a {
+      text-decoration: none;
+    }
+  }
+
+  @media only screen and (max-width: 1000px) {
+    .innerdiv {
+      transform: scale(0.7);
+    }
+  }
+  @media only screen and (max-width: 800px) {
+    .innerdiv {
+      transform: scale(0.6);
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    .div1 {
+      background-position-x: 10rem;
+    }
+    .innerdiv {
+      display: flex;
+      flex-direction: column;
+      transform: scale(1);
+      margin: 2rem;
+      margin-bottom: 5rem;
+    }
+    .attribution {
+      position: relative;
+    }
+  }
+}
+
+#paying {
+  .image-section {
+    position: relative;
+    background: url(./images/elements/oval.svg) no-repeat bottom;
+    background-size: contain;
+    margin: auto;
+    text-align: center;
+
+    .person {
+      width: 280px;
+    }
+  }
+
+  $border-radius: 50px;
+
+  .card {
+    border-radius: $border-radius;
+    transition: 0.2s ease-in-out;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+
+    &.glow-on-hover {
+      &::before, &::after {
+        border-radius: $border-radius;
+      }
+
+      color: white;
+    }
+  }
+
+  @include for-breakpoint(mobile) {
+    #glow-changer {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+  }
+}
+
+section#orbit {
+
+  .space-shuttle, .satellite {
+    position: absolute;
+    z-index: -1;
+  }
+
+  .space-shuttle {
+    &._1 {
+      right: 50%;
+    }
+
+    &._2 {
+      top: 10%;
+      right: 49%;
+    }
+
+    &._3 {
+      top: 6%;
+      right: 45%;
+    }
+  }
+
+  .orbit-logo {
+    position: absolute;
+    z-index: 2;
+  }
+
+  .planet-container {
+    padding-top: 2rem;
+    overflow: hidden;
+    width: 100%;
+    height: 500px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+    .planet {
       display: flex;
       align-items: center;
       justify-content: center;
-    }
+      -webkit-box-pack: center;
 
-    .innerdiv {
-      transform: scale(0.9);
-      display: grid;
-      grid-gap: 1.5rem;
-    }
-
-    .eachdiv {
-      padding: 1rem 2rem;
-      border-radius: 0.8rem;
-      box-shadow: 5px 5px 20px #6d6b6b6b;
-      color: $color_2;
-    }
-
-    .div1 {
-      background: #733FC8;
-      grid-column: 1/3;
-      grid-row: 1/2;
-      /*background-image: url(https://raw.githubusercontent.com/RahulSahOfficial/testimonials_grid_section/5532c958b7d3c9b910a216b198fdd21c73112d84/images/bg-pattern-quotation.svg);
-      background-repeat: no-repeat;
-      background-position-x: 20rem;*/
-    }
-
-    .div2 {
-      background: #49556B;
-      grid-column: 3/4;
-      grid-row: 1/2;
-    }
-
-    .div3 {
-      background: white;
-      grid-column: 4/5;
-      grid-row: 1/3;
-      color: $color_3;
-    }
-
-    .div4 {
-      background: white;
-      grid-column: 1/2;
-      grid-row: 2/3;
-      color: $color_3;
-    }
-
-    .div5 {
-      background: #f40e72;
-      grid-column: 2/4;
-      grid-row: 2/3;
-    }
-
-    .userdetails {
-      display: flex;
-    }
-
-    .imgbox {
-      margin-right: 1rem;
-
-      img {
-        border-radius: 50%;
-        width: 5rem;
-        border: 2px solid #cec5c5;
-      }
-    }
-
-    .detbox {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-
-      p {
-        margin: 0;
-      }
-
-      .name {
-        color: $color_4;
-        font-size: 0.9rem;
-        margin-bottom: 0.1rem;
-        font-weight: 600;
-      }
-
-      .name.dark {
-        color: $color_5;
-      }
-
-      .designation {
-        color: $color_4;
-        opacity: 50%;
-        font-size: 0.8rem;
-      }
-
-      .website {
-        color: #0e0e0e;
-      }
-
-      .designation.dark {
-        color: $color_5;
-      }
-    }
-
-    .review {
-      h4 {
-        font-size: 1.4rem;
-        color: $color_6;
-        font-weight: 600;
-        line-height: 1.5;
-        margin-bottom: 0.8rem;
-      }
-
-      p {
-        font-size: 0.95rem;
-        color: $color_6;
-        font-weight: 500;
-        opacity: 50%;
-        line-height: 1.5;
-      }
-    }
-
-    .review.dark {
-      h4 {
-        color: $color_7;
-      }
-
-      p {
-        color: $color_8;
-      }
-    }
-
-    .attribution {
-      font-size: 1rem;
-      line-height: 1.5;
-      position: fixed;
-      bottom: 1rem;
-      right: 1rem;
-      text-align: right;
-
-      a {
-        text-decoration: none;
-      }
-    }
-
-    @media only screen and (max-width: 1000px) {
-      .innerdiv {
-        transform: scale(0.7);
-      }
-    }
-    @media only screen and (max-width: 800px) {
-      .innerdiv {
-        transform: scale(0.6);
-      }
-    }
-    @media only screen and (max-width: 600px) {
-      .div1 {
-        background-position-x: 10rem;
-      }
-      .innerdiv {
-        display: flex;
-        flex-direction: column;
-        transform: scale(1);
-        margin: 2rem;
-        margin-bottom: 5rem;
-      }
-      .attribution {
-        position: relative;
-      }
-    }
-  }
-
-  #paying {
-    .image-section {
-      position: relative;
-      background: url(./images/elements/oval.svg) no-repeat bottom;
-      background-size: contain;
+      position: absolute;
       margin: auto;
-      text-align: center;
+      $pixels: 300vw;
 
-      .person {
-        width: 280px;
+      &.outer {
+        @for $i from 1 through 3 {
+          &._#{$i} {
+            $radius: $i*12+$pixels;
+            width: $radius;
+            height: $radius;
+            border-radius: $radius;
+
+            & > .orbit-logo {
+              left: 0;
+              transform-origin: math.div($radius, 2) 0;
+
+              img {
+                transform: rotate(270deg);
+              }
+            }
+          }
+        }
       }
-    }
 
-    $border-radius: 50px;
+      &.inner {
+        border: 1px solid #fff;
+        $radius: $pixels;
+        width: $pixels;
+        height: $pixels;
+        border-radius: $pixels;
 
-    .card {
-      border-radius: $border-radius;
-      transition: 0.2s ease-in-out;
+        .sun {
+          width: $pixels;
+          height: $pixels;
 
-      &:hover {
-        transform: scale(1.2);
-      }
-
-      &.glow-on-hover {
-        &::before, &::after {
-          border-radius: $border-radius;
+          .ray_box {
+            display: none;
+          }
         }
 
-        color: white;
-      }
-    }
-    @include for-breakpoint(mobile){
-      #glow-changer{
-        padding-left: 1rem;
-        padding-right: 1rem;
+        img {
+          position: absolute;
+          top: 40px;
+          width: 200px;
+        }
       }
     }
   }
 
-  section#orbit {
+  .contact-us {
+    min-height: 200px;
+    background: white;
+    opacity: 1;
 
-    .space-shuttle, .satellite {
-      position: absolute;
-      z-index: -1;
+    box-shadow: 0px 0px 40px 15px white;
+
+    .h1 {
+      font-family: "wild_worldbold", sans-serif;
     }
+  }
 
-    .space-shuttle {
-      &._1 {
-        right: 50%;
-      }
-
-      &._2 {
-        top: 10%;
-        right: 49%;
-      }
-
-      &._3 {
-        top: 6%;
-        right: 45%;
-      }
-    }
-
-    .orbit-logo {
-      position: absolute;
-      z-index: 2;
-    }
-
+  @include for-breakpoint(mobile) {
     .planet-container {
-      padding-top: 2rem;
-      overflow: hidden;
-      width: 100%;
-      height: 500px;
-      position: relative;
-      display: flex;
-      justify-content: center;
+      height: 50vh;
+      padding-top: 10vh;
 
       .planet {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        -webkit-box-pack: center;
-
-        position: absolute;
-        margin: auto;
         $pixels: 200vw;
 
         &.outer {
           @for $i from 1 through 3 {
             &._#{$i} {
-              $radius: $i*12+$pixels;
+              $radius: $i*30+$pixels;
               width: $radius;
               height: $radius;
               border-radius: $radius;
@@ -1410,17 +1541,12 @@ section#counter {
               & > .orbit-logo {
                 left: 0;
                 transform-origin: math.div($radius, 2) 0;
-
-                img {
-                  transform: rotate(270deg);
-                }
               }
             }
           }
         }
 
         &.inner {
-          border: 1px solid #fff;
           $radius: $pixels;
           width: $pixels;
           height: $pixels;
@@ -1429,88 +1555,44 @@ section#counter {
           .sun {
             width: $pixels;
             height: $pixels;
-
-            .ray_box {
-              display: none;
-            }
           }
 
           img {
-            position: absolute;
-            top: 40px;
-            width: 200px;
-          }
-        }
-      }
-    }
-    @include for-breakpoint(mobile){
-      .planet-container {
-        height: 50vh;
-        padding-top: 10vh;
-
-        .planet {
-          $pixels: 200vw;
-
-          &.outer {
-            @for $i from 1 through 3 {
-              &._#{$i} {
-                $radius: $i*30+$pixels;
-                width: $radius;
-                height: $radius;
-                border-radius: $radius;
-
-                & > .orbit-logo {
-                  left: 0;
-                  transform-origin: math.div($radius, 2) 0;
-                }
-              }
-            }
-          }
-
-          &.inner {
-            $radius: $pixels;
-            width: $pixels;
-            height: $pixels;
-            border-radius: $pixels;
-
-            .sun {
-              width: $pixels;
-              height: $pixels;
-            }
-
-            img {
-              width: 140px;
-            }
+            width: 140px;
           }
         }
       }
     }
   }
-#case-studies{
-  @include for-breakpoint(mobile){
-    .row > .col-12{
+}
+
+#case-studies {
+  @include for-breakpoint(mobile) {
+    .row > .col-12 {
       margin-bottom: 5rem;
     }
   }
 }
-  #latest-blog {
-    .rounded-image-effect {
-      border-radius: 20px;
 
-      .text {
-        display: block;
-        top: unset;
-        height: 80px;
-        padding: 18px;
+#latest-blog {
+  .rounded-image-effect {
+    border-radius: 20px;
 
-        * {
-          margin: 0;
-        }
-      }
-    }
-    @include for-breakpoint(mobile){
-      .row > .col-12{
-        margin-bottom: 5rem;
+    .text {
+      display: block;
+      top: unset;
+      height: 80px;
+      padding: 18px;
+
+      * {
+        margin: 0;
       }
     }
   }
+
+  @include for-breakpoint(mobile) {
+    .row > .col-12 {
+      margin-bottom: 5rem;
+    }
+  }
+}

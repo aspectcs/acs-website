@@ -7,11 +7,11 @@
         </div>
         <div class="row">
             <div class="col-12 col-md-4">
-                <img src="https://dummyimage.com/400x400/fff/000" class="img-fluid" alt="">
+                <img src="https://dummyimage.com/400x400/fff/000" class="img-fluid sun-rays rounded" alt="">
             </div>
             <div class="col-12 col-md-8">
-                <h3 class="display-4 stroke-text">Search Engine Optimization</h3>
-                <p class="h5 text-justify">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                <h3 class="fs-2 stroke-text">Search Engine Optimization</h3>
+                <p class="text-justify">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
                     printer took a galley of type and scrambled it to make a type specimen book. It has survived not
                     only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
@@ -26,11 +26,11 @@
         </div>
         <div class="row section-margin">
             <div class="col-12 col-md-4 order-2">
-                <img src="https://dummyimage.com/400x400/fff/000" class="img-fluid" alt="">
+                <img src="https://dummyimage.com/400x400/fff/000" class="img-fluid sun-rays rounded" alt="">
             </div>
             <div class="col-12 col-md-8 order-1">
-                <h3 class="display-4 stroke-text">Website Design</h3>
-                <p class="h5 text-justify">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                <h3 class="fs-2 stroke-text">Website Design</h3>
+                <p class="text-justify">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
                     printer took a galley of type and scrambled it to make a type specimen book. It has survived not
                     only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
@@ -45,11 +45,11 @@
         </div>
         <div class="row section-margin">
             <div class="col-12 col-md-4">
-                <img src="https://dummyimage.com/400x400/fff/000" class="img-fluid" alt="">
+                <img src="https://dummyimage.com/400x400/fff/000" class="img-fluid sun-rays rounded" alt="">
             </div>
             <div class="col-12 col-md-8">
-                <h3 class="display-4 stroke-text">Web Development</h3>
-                <p class="h5 text-justify">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                <h3 class="fs-2 stroke-text">Web Development</h3>
+                <p class="text-justify">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
                     printer took a galley of type and scrambled it to make a type specimen book. It has survived not
                     only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
@@ -64,5 +64,6 @@
         </div>
     </section>
     @include('chunks.case-studies')
-    @include('chunks.latest-blog')
+    @include('chunks.orbit')
+    @include('chunks.testimonials')
 @endsection

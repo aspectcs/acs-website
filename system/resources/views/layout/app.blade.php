@@ -40,6 +40,7 @@
 <script src="@assets('node_modules/gsap/dist/ScrollTrigger.min.js')"></script>
 <script src="@assets('node_modules/gsap/dist/MotionPathPlugin.min.js')"></script>
 <script src="@assets('node_modules/jquery/dist/jquery.min.js')"></script>
+<script src="@assets('node_modules/@popperjs/core/dist/umd/popper.min.js')"></script>
 <script src="@assets('node_modules/bootstrap/dist/js/bootstrap.min.js')"></script>
 
 {{--<script src="@assets('node_modules/particles.js/particles.js')"></script>--}}
