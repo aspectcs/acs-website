@@ -35,6 +35,12 @@
 @include('layout.footer')
 
 <canvas class="space" id="spaceCanvas"></canvas>
+<div class="night">
+    <div class="shooting_star"></div>
+    <div class="shooting_star"></div>
+    <div class="shooting_star"></div>
+    <div class="shooting_star"></div>
+</div>
 {{--<div id="particles-js"></div>--}}
 <script src="@assets('node_modules/gsap/dist/gsap.min.js')"></script>
 <script src="@assets('node_modules/gsap/dist/ScrollTrigger.min.js')"></script>

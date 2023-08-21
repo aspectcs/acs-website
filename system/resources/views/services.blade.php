@@ -2,6 +2,8 @@
 @section('content')
     <section class="container" id="services">
         <div class="heading" aria-hidden="true">
+
+            <img src="@assets('images/elements/space-doodle6.png')" class="space-doodle6 floating-element" alt="">
             <p class="headline">Our Awesome Services</p>
             <p class="sub-headline">Client Reviews That Leave Us in Awe!</p>
         </div>

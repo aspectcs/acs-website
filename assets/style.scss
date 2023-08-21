@@ -699,17 +699,27 @@ $shooting-time: 4000ms;
   }
 }
 
-section {
-  $margin: 5rem;
-  margin-top: $margin;
-  margin-bottom: $margin;
 
-  .section-margin {
+body {
+  $margin: 5rem;
+
+  section {
+    &:first-of-type {
+      margin-top: $margin + 3rem;
+    }
+
     margin-top: $margin;
-    @include for-breakpoint(mobile) {
-      margin-top: 2rem;
+    margin-bottom: $margin;
+
+    .section-margin {
+      margin-top: $margin;
+      @include for-breakpoint(mobile) {
+        margin-top: 2rem;
+      }
     }
   }
+
+
 }
 
 .z-index-0 {
@@ -729,7 +739,7 @@ section {
   font-family: 'wild_worldbold', sans-serif;
 }
 
-.sun-rays{
+.sun-rays {
   box-shadow: 0px 0px 40px 15px white;
 }
 
@@ -779,6 +789,39 @@ section {
       top: -60px;
       right: 50px;
       width: 320px;
+    }
+
+    &.space-doodle {
+      width: 80px;
+      top: 0;
+      left: -60px;
+    }
+
+    &.space-doodle2 {
+      width: 80px;
+      top: -40px;
+      right: 0;
+    }
+
+    &.space-doodle3 {
+      right: 100px;
+      top: -20px;
+      width: 80px;
+    }
+
+    &.space-doodle4 {
+      left: -10px;
+      top: -80px;
+      width: 80px;
+    }
+
+    &.space-doodle5 {
+      right: -80px;
+    }
+
+    &.space-doodle6 {
+      width: 80px;
+      left: 0;
     }
   }
 
@@ -1027,7 +1070,6 @@ section.home-banner {
           }
 
 
-
           @keyframes animate_vector {
             0% {
               text-shadow: 0 0 50px #ffffff, 0 0 100px #ffffff, 0 0 150px #ffffff, 0 0 200px #ffffff;
@@ -1036,7 +1078,7 @@ section.home-banner {
             50% {
               transform: translatey(-20px);
             }
-            80%{
+            80% {
               text-shadow: 0 0 0 #ffffff, 0 0 0 #ffffff, 0 0 0 #ffffff, 0 0 0 #ffffff;
             }
             100% {
