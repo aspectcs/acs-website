@@ -33,7 +33,7 @@
                         <a class="nav-link" href="#">Blog</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="@route('contact-us')">Contact</a>
                     </li>
                 </ul>
             </div>

@@ -22,6 +22,11 @@ Route::get('services', function () {
     return view('services');
 })->name('services');
 
+
+Route::get('contact-us', function () {
+    return view('contact-us');
+})->name('contact-us');
+
 Route::name('about.')->group(function () {
 
     Route::get('our-stories', function () {

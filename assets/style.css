@@ -3,13 +3,16 @@
 /********************************************************/
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Roboto:wght@400;700;800&display=swap");
 :root {
-  --cursor-default: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='26' height='31' fill='none' viewBox='0 0 26 31'%3E%3Cpath fill='%23fff' fill-rule='evenodd' stroke='%23010101' stroke-linecap='square' stroke-width='2.5' d='M21.993 14.425 2.549 2.935l4.444 23.108 4.653-10.002 10.347-1.616Z' clip-rule='evenodd'/%3E%3C/svg%3E"), auto;
+  --cursor-default: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='26' height='31' fill='none'  x='0px' y='0px' viewBox='0 0 460.8 470.4' style='enable-background:new 0 0 460.8 470.4;' xml:space='preserve'%3E%3Cstyle type='text/css'%3E .st0%7Bfill:%2319173A;%7D .st1%7Bfill:url(%23SVGID_1_);%7D .st2%7Bfill:%234E327A;%7D .st3%7Bfill:%23FC9103;%7D .st4%7Bfill:%23FCC903;%7D .st5%7Bfill:url(%23SVGID_00000093861890837607346710000009026511267769694644_);%7D .st6%7Bfill:url(%23SVGID_00000173862642275614227980000002784379990942872961_);%7D .st7%7Bfill:url(%23SVGID_00000155855459273609279580000001290194272012917667_);%7D .st8%7Bfill:url(%23ef8om3slEe428_00000070089425802240733330000010743727169161228470_);%7D .st9%7Bfill:url(%23ef8om3slEe429_00000163787852904420495900000003544639980635168939_);%7D%0A%3C/style%3E%3Cg id='Layer_1-2' shape-rendering='geometricPrecision' text-rendering='geometricPrecision'%3E%3Cg id='ef8om3slEe411'%3E%3Cg%3E%3Cpolygon class='st0' points='193.6,136.2 326.2,268.8 326.2,326.8 193.6,194.2 '/%3E%3ClinearGradient id='SVGID_1_' gradientUnits='userSpaceOnUse' x1='-1393.8419' y1='24.5841' x2='-1393.952' y2='24.1941' gradientTransform='matrix(-51.9615 30 103.0713 103.0736 -74629.7891 39520.9961)'%3E%3Cstop offset='0' style='stop-color:%234557A1'/%3E%3Cstop offset='1' style='stop-color:%23431D7B'/%3E%3C/linearGradient%3E%3Cpolygon class='st1' points='378.1,238.8 326.2,268.8 223.1,165.7 275,135.7 '/%3E%3Cpolygon class='st2' points='378.1,296.8 326.1,326.8 326.1,268.8 378.1,238.8 '/%3E%3Cpolygon class='st3' points='366.1,290.3 338.2,306.4 338.2,275.3 366.1,259.2 '/%3E%3C/g%3E%3Cg id='ef8om3slEe417'%3E%3Cpath class='st4' d='M423.5,311.9c24.4,24.4,37.3,80.5,37.3,80.5s-55.6-12.5-80.5-37.3c-11.9-11.9-11.9-31.2,0-43.1 S411.6,300,423.5,311.9L423.5,311.9z'/%3E%3ClinearGradient id='SVGID_00000060720450292368428710000015611333344535976342_' gradientUnits='userSpaceOnUse' x1='-1376.3331' y1='17.1456' x2='-1376.3331' y2='17.9156' gradientTransform='matrix(-22.3941 22.3941 48.5782 48.5782 -31251.8848 30323.0703)'%3E%3Cstop offset='0' style='stop-color:%23FAF8F1'/%3E%3Cstop offset='1' style='stop-color:%23000000'/%3E%3C/linearGradient%3E%3Cpath style='fill:url(%23SVGID_00000060720450292368428710000015611333344535976342_);' d='M439.3,370.8c0,0-35.7-13.3-48.6-26.2 c-6.2-6.2-6.2-16.2,0-22.4s16.2-6.2,22.4,0C425.8,334.9,439.3,370.8,439.3,370.8z'/%3E%3C/g%3E%3Cg%3E%3Cpolygon class='st0' points='90.1,243.7 193.2,346.8 193.2,404.8 90.1,301.7 '/%3E%3ClinearGradient id='SVGID_00000120527102387857088340000003726224263041717405_' gradientUnits='userSpaceOnUse' x1='-1393.9891' y1='24.564' x2='-1393.9192' y2='24.1439' gradientTransform='matrix(-51.9615 30 103.0713 103.0736 -74762.7891 39598.9961)'%3E%3Cstop offset='0' style='stop-color:%234557A1'/%3E%3Cstop offset='1' style='stop-color:%23431D7B'/%3E%3C/linearGradient%3E%3Cpolygon style='fill:url(%23SVGID_00000120527102387857088340000003726224263041717405_);' points='245.1,316.8 193.2,346.8 90.1,243.7 142,213.7 '/%3E%3Cpolygon class='st2' points='245.1,374.8 193.1,404.8 193.1,346.8 245.1,316.8 '/%3E%3Cpolygon class='st3' points='233.1,368.3 205.2,384.4 205.2,353.3 233.1,337.2 '/%3E%3C/g%3E%3Cg id='ef8om3slEe425'%3E%3Cpath class='st4' d='M327.8,470.4c0,0-55.6-12.5-80.5-37.4c-11.9-11.9-11.9-31.2,0-43.1c11.9-11.9,31.2-11.9,43.1,0 C314.9,414.3,327.8,470.4,327.8,470.4z'/%3E%3ClinearGradient id='SVGID_00000006683980573561100520000003665390592190952073_' gradientUnits='userSpaceOnUse' x1='-1376.3331' y1='17.1456' x2='-1376.3331' y2='17.9156' gradientTransform='matrix(-22.3941 22.3941 48.5782 48.5782 -31384.8848 30401.0703)'%3E%3Cstop offset='0' style='stop-color:%23FAF8F1'/%3E%3Cstop offset='1' style='stop-color:%23000000'/%3E%3C/linearGradient%3E%3Cpath style='fill:url(%23SVGID_00000006683980573561100520000003665390592190952073_);' d='M306.3,448.8c0,0-35.7-13.3-48.6-26.2 c-6.2-6.2-6.2-16.2,0-22.4c6.2-6.2,16.2-6.2,22.4,0C292.8,412.9,306.3,448.8,306.3,448.8z'/%3E%3C/g%3E%3CradialGradient id='ef8om3slEe428_00000005249156796492555100000011009253608180415626_' cx='-1414.9858' cy='18.3245' r='1.27' gradientTransform='matrix(45.8342 352.422 180.3359 -32.0245 61546.7773 499262.4375)' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' style='stop-color:%232E0837'/%3E%3Cstop offset='0.83' style='stop-color:%23891162'/%3E%3Cstop offset='1' style='stop-color:%232E0837'/%3E%3C/radialGradient%3E%3Cpath id='ef8om3slEe428' style='fill:url(%23ef8om3slEe428_00000005249156796492555100000011009253608180415626_);' d='M449.1,134.3 c1.6,2.8,0.4,40.1-0.7,44.9c-1.1,4.6-4.5,9-9.9,12.2c-3.9,2.3-8.4,3.6-12.9,4L202,218.6c-4.5,0.4-8.9,1.7-12.9,4s-6.8,5.2-8.5,8.4 L91.2,388.4c-1.7,3.2-4.5,6.1-8.5,8.4c-11.1,6.4-26.5,5.1-34.5-2.8c-2.7-2.7-4.2-5.9-4.6-9.1L0.6,61.7c-0.1-0.9-2.1-39.2,2.4-46.6 L449.1,134.3z'/%3E%3ClinearGradient id='ef8om3slEe429_00000101081370900387463690000017716303299633801355_' gradientUnits='userSpaceOnUse' x1='-1412.1475' y1='24.7801' x2='-1412.4574' y2='26.2001' gradientTransform='matrix(-395.9468 228.6 249.9717 249.9166 -565422.0625 316662.1875)'%3E%3Cstop offset='0' style='stop-color:%23D11B7E'/%3E%3Cstop offset='1' style='stop-color:%23F33780'/%3E%3C/linearGradient%3E%3Cpath id='ef8om3slEe429' style='fill:url(%23ef8om3slEe429_00000101081370900387463690000017716303299633801355_);' d='M10.7,4.1 L10.7,4.1c7.6-4.4,17.2-5.2,25-2.7l398.2,118.2c4,1.1,7.6,3.1,10.3,5.8c7.9,8,5.4,19.6-5.7,26c-3.9,2.3-8.4,3.6-12.9,4L202,178.6 c-4.5,0.4-8.9,1.7-12.9,4s-6.8,5.2-8.5,8.4L91.2,348.4c-1.7,3.2-4.5,6.1-8.5,8.4c-11.1,6.4-26.5,5.1-34.5-2.8 c-2.7-2.7-4.2-5.9-4.6-9.1L0.6,21.7C-0.5,15.3,3.1,8.4,10.7,4.1L10.7,4.1z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A"), auto;
   --color-pink: #bb1c94;
+}
+
+html {
+  cursor: var(--cursor-default) !important;
 }
 
 html, body {
   font-family: "Montserrat", sans-serif;
-  cursor: var(--cursor-default) !important;
   overflow-x: hidden;
 }
 
@@ -271,164 +274,164 @@ html, body {
   animation: shining 4000ms ease-in-out infinite;
 }
 .shooting_star:nth-child(1) {
-  top: calc(50% - -100px);
-  left: calc(50% - 296px);
-  animation-delay: 9004ms;
+  top: calc(50% - -65px);
+  left: calc(50% - 28px);
+  animation-delay: 2013ms;
 }
 .shooting_star:nth-child(1)::before, .shooting_star:nth-child(1)::after {
-  animation-delay: 9004ms;
+  animation-delay: 2013ms;
 }
 .shooting_star:nth-child(2) {
-  top: calc(50% - 82px);
-  left: calc(50% - 258px);
-  animation-delay: 2148ms;
+  top: calc(50% - 58px);
+  left: calc(50% - 39px);
+  animation-delay: 6293ms;
 }
 .shooting_star:nth-child(2)::before, .shooting_star:nth-child(2)::after {
-  animation-delay: 2148ms;
+  animation-delay: 6293ms;
 }
 .shooting_star:nth-child(3) {
-  top: calc(50% - 104px);
-  left: calc(50% - 180px);
-  animation-delay: 5884ms;
+  top: calc(50% - -42px);
+  left: calc(50% - 127px);
+  animation-delay: 5823ms;
 }
 .shooting_star:nth-child(3)::before, .shooting_star:nth-child(3)::after {
-  animation-delay: 5884ms;
+  animation-delay: 5823ms;
 }
 .shooting_star:nth-child(4) {
-  top: calc(50% - -136px);
-  left: calc(50% - 25px);
-  animation-delay: 8331ms;
+  top: calc(50% - -36px);
+  left: calc(50% - 74px);
+  animation-delay: 6049ms;
 }
 .shooting_star:nth-child(4)::before, .shooting_star:nth-child(4)::after {
-  animation-delay: 8331ms;
+  animation-delay: 6049ms;
 }
 .shooting_star:nth-child(5) {
-  top: calc(50% - 190px);
-  left: calc(50% - 139px);
-  animation-delay: 8544ms;
+  top: calc(50% - 62px);
+  left: calc(50% - 114px);
+  animation-delay: 6451ms;
 }
 .shooting_star:nth-child(5)::before, .shooting_star:nth-child(5)::after {
-  animation-delay: 8544ms;
+  animation-delay: 6451ms;
 }
 .shooting_star:nth-child(6) {
-  top: calc(50% - -57px);
-  left: calc(50% - 259px);
-  animation-delay: 8620ms;
+  top: calc(50% - -53px);
+  left: calc(50% - 211px);
+  animation-delay: 5603ms;
 }
 .shooting_star:nth-child(6)::before, .shooting_star:nth-child(6)::after {
-  animation-delay: 8620ms;
+  animation-delay: 5603ms;
 }
 .shooting_star:nth-child(7) {
-  top: calc(50% - 59px);
-  left: calc(50% - 166px);
-  animation-delay: 9413ms;
+  top: calc(50% - -94px);
+  left: calc(50% - 168px);
+  animation-delay: 9193ms;
 }
 .shooting_star:nth-child(7)::before, .shooting_star:nth-child(7)::after {
-  animation-delay: 9413ms;
+  animation-delay: 9193ms;
 }
 .shooting_star:nth-child(8) {
-  top: calc(50% - -25px);
-  left: calc(50% - 264px);
-  animation-delay: 207ms;
+  top: calc(50% - -99px);
+  left: calc(50% - 225px);
+  animation-delay: 8665ms;
 }
 .shooting_star:nth-child(8)::before, .shooting_star:nth-child(8)::after {
-  animation-delay: 207ms;
+  animation-delay: 8665ms;
 }
 .shooting_star:nth-child(9) {
-  top: calc(50% - -83px);
-  left: calc(50% - 52px);
-  animation-delay: 8510ms;
+  top: calc(50% - -174px);
+  left: calc(50% - 123px);
+  animation-delay: 1725ms;
 }
 .shooting_star:nth-child(9)::before, .shooting_star:nth-child(9)::after {
-  animation-delay: 8510ms;
+  animation-delay: 1725ms;
 }
 .shooting_star:nth-child(10) {
-  top: calc(50% - 33px);
-  left: calc(50% - 129px);
-  animation-delay: 5890ms;
+  top: calc(50% - 184px);
+  left: calc(50% - 222px);
+  animation-delay: 1139ms;
 }
 .shooting_star:nth-child(10)::before, .shooting_star:nth-child(10)::after {
-  animation-delay: 5890ms;
+  animation-delay: 1139ms;
 }
 .shooting_star:nth-child(11) {
-  top: calc(50% - -147px);
-  left: calc(50% - 70px);
-  animation-delay: 1546ms;
+  top: calc(50% - 88px);
+  left: calc(50% - 113px);
+  animation-delay: 2573ms;
 }
 .shooting_star:nth-child(11)::before, .shooting_star:nth-child(11)::after {
-  animation-delay: 1546ms;
+  animation-delay: 2573ms;
 }
 .shooting_star:nth-child(12) {
-  top: calc(50% - 45px);
-  left: calc(50% - 292px);
-  animation-delay: 8637ms;
+  top: calc(50% - 16px);
+  left: calc(50% - 67px);
+  animation-delay: 1811ms;
 }
 .shooting_star:nth-child(12)::before, .shooting_star:nth-child(12)::after {
-  animation-delay: 8637ms;
+  animation-delay: 1811ms;
 }
 .shooting_star:nth-child(13) {
-  top: calc(50% - 128px);
-  left: calc(50% - 163px);
-  animation-delay: 5994ms;
+  top: calc(50% - 127px);
+  left: calc(50% - 273px);
+  animation-delay: 9687ms;
 }
 .shooting_star:nth-child(13)::before, .shooting_star:nth-child(13)::after {
-  animation-delay: 5994ms;
+  animation-delay: 9687ms;
 }
 .shooting_star:nth-child(14) {
-  top: calc(50% - -43px);
-  left: calc(50% - 298px);
-  animation-delay: 3242ms;
+  top: calc(50% - 145px);
+  left: calc(50% - 153px);
+  animation-delay: 1865ms;
 }
 .shooting_star:nth-child(14)::before, .shooting_star:nth-child(14)::after {
-  animation-delay: 3242ms;
+  animation-delay: 1865ms;
 }
 .shooting_star:nth-child(15) {
-  top: calc(50% - -113px);
-  left: calc(50% - 86px);
-  animation-delay: 9145ms;
+  top: calc(50% - -71px);
+  left: calc(50% - 193px);
+  animation-delay: 1493ms;
 }
 .shooting_star:nth-child(15)::before, .shooting_star:nth-child(15)::after {
-  animation-delay: 9145ms;
+  animation-delay: 1493ms;
 }
 .shooting_star:nth-child(16) {
-  top: calc(50% - -113px);
-  left: calc(50% - 158px);
-  animation-delay: 4694ms;
+  top: calc(50% - -105px);
+  left: calc(50% - 11px);
+  animation-delay: 1275ms;
 }
 .shooting_star:nth-child(16)::before, .shooting_star:nth-child(16)::after {
-  animation-delay: 4694ms;
+  animation-delay: 1275ms;
 }
 .shooting_star:nth-child(17) {
-  top: calc(50% - -156px);
-  left: calc(50% - 185px);
-  animation-delay: 522ms;
+  top: calc(50% - 16px);
+  left: calc(50% - 135px);
+  animation-delay: 3021ms;
 }
 .shooting_star:nth-child(17)::before, .shooting_star:nth-child(17)::after {
-  animation-delay: 522ms;
+  animation-delay: 3021ms;
 }
 .shooting_star:nth-child(18) {
-  top: calc(50% - 12px);
-  left: calc(50% - 50px);
-  animation-delay: 9555ms;
+  top: calc(50% - 96px);
+  left: calc(50% - 67px);
+  animation-delay: 5537ms;
 }
 .shooting_star:nth-child(18)::before, .shooting_star:nth-child(18)::after {
-  animation-delay: 9555ms;
+  animation-delay: 5537ms;
 }
 .shooting_star:nth-child(19) {
-  top: calc(50% - 118px);
-  left: calc(50% - 135px);
-  animation-delay: 1531ms;
+  top: calc(50% - 146px);
+  left: calc(50% - 178px);
+  animation-delay: 8382ms;
 }
 .shooting_star:nth-child(19)::before, .shooting_star:nth-child(19)::after {
-  animation-delay: 1531ms;
+  animation-delay: 8382ms;
 }
 .shooting_star:nth-child(20) {
-  top: calc(50% - -33px);
-  left: calc(50% - 18px);
-  animation-delay: 1490ms;
+  top: calc(50% - -127px);
+  left: calc(50% - 194px);
+  animation-delay: 276ms;
 }
 .shooting_star:nth-child(20)::before, .shooting_star:nth-child(20)::after {
-  animation-delay: 1490ms;
+  animation-delay: 276ms;
 }
 
 @keyframes tail {
@@ -821,6 +824,10 @@ body section .section-margin {
 .heading img.space-doodle6 {
   width: 80px;
   left: 0;
+}
+.heading img.astronaut-with-laptop {
+  width: 180px;
+  right: 0;
 }
 .heading .headline {
   text-transform: uppercase;
@@ -1894,8 +1901,8 @@ section.team .team-container ul.social li a {
   width: 150px;
   left: 40%;
   bottom: 0;
-  transform: translateX(-50vw) rotate(0deg);
-  animation: handshake1 10s ease-in-out infinite;
+  transform: translateX(0) rotate(0deg);
+  animation: handshake1 3s ease 1;
 }
 .partnerships .handshake .handshake2 {
   position: absolute;
@@ -1903,30 +1910,36 @@ section.team .team-container ul.social li a {
   left: 49%;
   z-index: -1;
   top: -40px;
-  transform: translateX(50vw) rotate(360deg);
-  animation: handshake2 10s ease-in-out infinite;
+  transform: translateX(0) rotate(0deg);
+  animation: handshake2 3s ease 1;
 }
 @keyframes handshake1 {
   0% {
     transform: translateX(-50vw) rotate(360deg);
   }
-  40%, 60% {
+  100% {
+    transform: translateX(0px) rotate(0deg);
+  }
+  /*40%, 60% {
     transform: translateX(0px) rotate(0deg);
   }
   100% {
     transform: translateX(-50vw) rotate(360deg);
-  }
+  }*/
 }
 @keyframes handshake2 {
   0% {
     transform: translateX(50vw) rotate(360deg);
   }
-  40%, 60% {
+  100% {
+    transform: translateX(0px) rotate(0deg);
+  }
+  /*40%, 60% {
     transform: translateX(0px) rotate(0deg);
   }
   100% {
     transform: translateX(50vw) rotate(360deg);
-  }
+  }*/
 }
 
 /*# sourceMappingURL=style.css.map */

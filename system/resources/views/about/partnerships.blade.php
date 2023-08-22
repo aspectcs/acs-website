@@ -4,7 +4,7 @@
         <div class="container">
             <div class="heading" aria-hidden="true">
                 <img src="@assets('images/elements/space-doodle8.png')" class="space-doodle8 floating-element" alt="">
-                <p class="headline">Our Partners</p>
+                <p class="headline">Our Partnership</p>
                 <p class="sub-headline">Client Reviews That Leave Us in Awe!</p>
             </div>
         </div>

@@ -20,7 +20,7 @@
                     It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
                     and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem
                     Ipsum.</p>
-                <div class="my-5 text-center">
+                <div class="my-5">
                     <button class="glow-on-hover active btn btn-dark text-uppercase btn-lg">Book a Discovery Call <i
                             class="ms-2 fa-brands fa-searchengin fa-bounce"></i></button>
                 </div>
@@ -39,7 +39,7 @@
                     It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
                     and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem
                     Ipsum.</p>
-                <div class="my-5 text-center">
+                <div class="my-5 ">
                     <button class="glow-on-hover active btn btn-dark text-uppercase btn-lg">Book a Discovery Call <i
                             class="ms-2 fa-brands fa-searchengin fa-bounce"></i></button>
                 </div>
@@ -58,7 +58,7 @@
                     It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
                     and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem
                     Ipsum.</p>
-                <div class="my-5 text-center">
+                <div class="my-5">
                     <button class="glow-on-hover active btn btn-dark text-uppercase btn-lg">Book a Discovery Call <i
                             class="ms-2 fa-brands fa-searchengin fa-bounce"></i></button>
                 </div>
