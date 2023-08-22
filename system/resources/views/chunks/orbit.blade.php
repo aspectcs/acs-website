@@ -23,42 +23,42 @@
         <div class="planet-container">
             <div class="planet outer _3">
             <span class="orbit-logo">
-                    <img src="@assets('images/favicon.png')" width="100" alt="">
+                    <img src="https://picsum.photos/seed/logo1/100" width="100" alt="">
             </span>
                 <span class="orbit-logo">
-                    <img src="@assets('images/favicon.png')" width="100" alt="">
+                    <img src="https://picsum.photos/seed/logo2/100" width="100" alt="">
             </span>
                 <span class="orbit-logo">
-                    <img src="@assets('images/favicon.png')" width="100" alt="">
+                    <img src="https://picsum.photos/seed/logo3/100" width="100" alt="">
             </span>
                 <span class="orbit-logo">
-                    <img src="@assets('images/favicon.png')" width="100" alt="">
+                    <img src="https://picsum.photos/seed/logo4/100" width="100" alt="">
             </span>
                 <div class="planet outer _2">
                 <span class="orbit-logo">
-                        <img src="@assets('images/favicon.png')" width="100" alt="">
+                        <img src="https://picsum.photos/seed/logo5/100" width="100" alt="">
                 </span>
                     <span class="orbit-logo">
-                        <img src="@assets('images/favicon.png')" width="100" alt="">
+                        <img src="https://picsum.photos/seed/logo6/100" width="100" alt="">
                 </span>
                     <span class="orbit-logo">
-                        <img src="@assets('images/favicon.png')" width="100" alt="">
+                        <img src="https://picsum.photos/seed/logo7/100" width="100" alt="">
                 </span>
                     <span class="orbit-logo">
-                        <img src="@assets('images/favicon.png')" width="100" alt="">
+                        <img src="https://picsum.photos/seed/logo8/100" width="100" alt="">
                 </span>
                     <div class="planet outer _1">
                    <span class="orbit-logo">
-                            <img src="@assets('images/favicon.png')" width="100" alt="">
+                            <img src="https://picsum.photos/seed/logo9/100" width="100" alt="">
                     </span>
                         <span class="orbit-logo">
-                            <img src="@assets('images/favicon.png')" width="100" alt="">
+                            <img src="https://picsum.photos/seed/logo10/100" width="100" alt="">
                     </span>
                         <span class="orbit-logo">
-                            <img src="@assets('images/favicon.png')" width="100" alt="">
+                            <img src="https://picsum.photos/seed/logo11/100" width="100" alt="">
                     </span>
                         <span class="orbit-logo">
-                            <img src="@assets('images/favicon.png')" width="100" alt="">
+                            <img src="https://picsum.photos/seed/logo12/100" width="100" alt="">
                     </span>
                         <div class="planet inner">
                             <div class="sun">

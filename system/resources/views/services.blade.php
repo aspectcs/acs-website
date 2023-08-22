@@ -8,10 +8,10 @@
             <p class="sub-headline">Client Reviews That Leave Us in Awe!</p>
         </div>
         <div class="row">
-            <div class="col-12 col-md-4">
-                <img src="https://dummyimage.com/400x400/fff/000" class="img-fluid sun-rays rounded" alt="">
+            <div class="col-12 col-md-6">
+                <img src="https://picsum.photos/seed/picsum/600/400" class="img-fluid sun-rays rounded" alt="">
             </div>
-            <div class="col-12 col-md-8">
+            <div class="col-12 col-md-6">
                 <h3 class="fs-2 stroke-text">Search Engine Optimization</h3>
                 <p class="text-justify">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
@@ -27,10 +27,10 @@
             </div>
         </div>
         <div class="row section-margin">
-            <div class="col-12 col-md-4 order-2">
-                <img src="https://dummyimage.com/400x400/fff/000" class="img-fluid sun-rays rounded" alt="">
+            <div class="col-12 col-md-6 order-2">
+                <img src="https://picsum.photos/seed/icsum/600/400" class="img-fluid sun-rays rounded" alt="">
             </div>
-            <div class="col-12 col-md-8 order-1">
+            <div class="col-12 col-md-6 order-1">
                 <h3 class="fs-2 stroke-text">Website Design</h3>
                 <p class="text-justify">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
@@ -46,10 +46,10 @@
             </div>
         </div>
         <div class="row section-margin">
-            <div class="col-12 col-md-4">
-                <img src="https://dummyimage.com/400x400/fff/000" class="img-fluid sun-rays rounded" alt="">
+            <div class="col-12 col-md-6">
+                <img src="https://picsum.photos/seed/pisum/600/400" class="img-fluid sun-rays rounded" alt="">
             </div>
-            <div class="col-12 col-md-8">
+            <div class="col-12 col-md-6">
                 <h3 class="fs-2 stroke-text">Web Development</h3>
                 <p class="text-justify">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown

@@ -16,12 +16,12 @@
                     </div>
                 </div>
                 <div class="col-12 col-md-6">
-                    <img src="https://dummyimage.com/600x400/fff/000" class="img-fluid sun-rays rounded floating-element" alt="">
+                    <img src="https://picsum.photos/seed/as/600/400" class="img-fluid sun-rays rounded floating-element" alt="">
                 </div>
             </div>
             <div class="row section-margin">
                 <div class="col-12 col-md-6">
-                    <img src="https://dummyimage.com/600x400/fff/000" class="img-fluid sun-rays rounded floating-element" alt="">
+                    <img src="https://picsum.photos/seed/waht/600/400" class="img-fluid sun-rays rounded floating-element" alt="">
                 </div>
                 <div class="col-12 col-md-6">
                     <div class="heading mb-3 me-4" aria-hidden="true">
@@ -50,12 +50,12 @@
                     </div>
                 </div>
                 <div class="col-12 col-md-6">
-                    <img src="https://dummyimage.com/600x400/fff/000" class="img-fluid sun-rays rounded floating-element" alt="">
+                    <img src="https://picsum.photos/seed/asdsdsd/600/400" class="img-fluid sun-rays rounded floating-element" alt="">
                 </div>
             </div>
             <div class="row section-margin">
                 <div class="col-12 col-md-6">
-                    <img src="https://dummyimage.com/600x400/fff/000" class="img-fluid sun-rays rounded floating-element" alt="">
+                    <img src="https://picsum.photos/seed/asdsd/600/400" class="img-fluid sun-rays rounded floating-element" alt="">
                 </div>
                 <div class="col-12 col-md-6">
                     <div class="heading mb-3 me-4" aria-hidden="true">
