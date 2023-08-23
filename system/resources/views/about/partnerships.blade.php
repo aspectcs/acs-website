@@ -22,6 +22,7 @@
         </div>--}}
         <div class="handshake">
             <img src="@assets('images/elements/astronaut-handshake1.png')" alt="" class="handshake1">
+            <div class="shine-effect"></div>
             <img src="@assets('images/elements/astronaut-handshake2.png')" alt="" class="handshake2">
         </div>
     </section>

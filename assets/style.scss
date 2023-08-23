@@ -43,13 +43,18 @@ $media_queries: (
 $color-platter: #6435cb, #bb1c94, #a324a4, #ce1789, #e6147c, #842cbc, #8f2cb1, #b41e9c, #c41c94, #f30c73, #dc1484, #9424ac, #842cb4, #7c2cbc, #742cbc, #ec24b4, #a428a8, #a428a8;
 
 
-html {
-  cursor: var(--cursor-default) !important;
-}
-
 html, body {
   font-family: 'Montserrat', sans-serif;
   overflow-x: hidden;
+}
+html {
+  cursor: var(--cursor-default) !important;
+  -webkit-overflow-scrolling: touch;
+  overflow-scrolling: touch;
+}
+body{
+  overflow-y: visible;
+  height: unset;
 }
 
 
@@ -1649,107 +1654,28 @@ section#orbit {
   }
 }
 
-.core-values {
-  display: grid;
-  place-content: center;
+section.core-values {
 
-  .core-values-container {
-    --size: calc(100vh / 1.5);
-    --gap: 10px;
+}
 
-    display: grid;
-    gap: var(--gap);
-    grid-template-columns: repeat(2, auto);
-    position: relative;
-    font-size: 0;
-    transition: .5s;
-    cursor: pointer;
-
-    & > div {
-      position: relative;
-
-      & > div {
-        font-size: 14px;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        padding: 1rem;
-        background-color: rgba(0, 0, 0, 0.2);
-        display: flex;
-        flex-direction: column;
-      }
-
-      img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
-
-      aspect-ratio: 16 / 9;
-      width: var(--size);
-      -webkit-mask: radial-gradient(farthest-side at var(--_a),
-              #0000 calc(50% + var(--gap) / 2 + 1em), #000 calc(51% + var(--gap) / 2 + 1em));
-
-      &.top-left {
-        --_a: calc(100% + var(--gap) / 2) calc(100% + var(--gap) / 2);
-
-        & > div {
-          justify-content: start;
-          align-items: start;
-        }
-      }
-
-      &.top-right {
-        --_a: calc(0% - var(--gap) / 2) calc(100% + var(--gap) / 2);
-
-        & > div {
-          justify-content: start;
-          align-items: end;
-          text-align: right;
-        }
-      }
-
-      &.bottom-left {
-        --_a: calc(100% + var(--gap) / 2) calc(0% - var(--gap) / 2);
-
-        & > div {
-          justify-content: end;
-          align-items: start;
-        }
-      }
-
-      &.bottom-right {
-        --_a: calc(0% - var(--gap) / 2) calc(0% - var(--gap) / 2);
-
-        & > div {
-          justify-content: end;
-          align-items: end;
-          text-align: right;
-        }
-      }
-
-      &.center {
-        position: absolute;
-        width: calc(var(--size) + 2em);
-        inset: 0;
-        margin: auto;
-        border-radius: 50%;
-
-        img {
-          border-radius: 50%;
-        }
-      }
-    }
-
-    &:hover {
-      font-size: calc(var(--size) / 15);
-    }
+section.horizontal-slide{
+  margin-top: 80px;
+  height: calc(100vh - 100px);
+  width: calc(33.33vw * 9);
+  display: flex;
+  flex-wrap: nowrap;
+  .panel{
+    width: 33.33vw;
+    height: 80vh;
+    margin: 1.5rem;
+    padding: 1.5rem;
+    border:1px solid white;
   }
 }
 
 section.team {
   .team-container {
+    margin-top: 15rem;
     display: flex;
     justify-content: space-evenly;
 
@@ -2137,6 +2063,28 @@ section.team {
       animation: handshake2 3s ease 1;
     }
 
+    .shine-effect {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background: transparent;
+      bottom: 0;
+      left: 49%;
+      z-index: -1;
+      top: 41%;
+      animation: shine-effect 1s ease;
+      animation-delay: 3s;
+      animation-fill-mode: forwards;
+    }
+
+    @keyframes shine-effect {
+      0% {
+        box-shadow: 0 0 0 0 white;
+      }
+      100% {
+        box-shadow: 0 0 40px 15px white;
+      }
+    }
     @keyframes handshake1 {
       0% {
         transform: translateX(-50vw) rotate(360deg);
@@ -2170,4 +2118,39 @@ section.team {
 
 section#contact-us {
 
+}
+
+.space-station {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  .station, .astronaut1, .astronaut2, .astronaut3 {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .station {
+    z-index: -1;
+  }
+
+  .astronaut1, .astronaut2, .astronaut3 {
+    z-index: -2;
+  }
+
+  .astronaut1 {
+    right: 0;
+    top: 300px;
+  }
+
+  .astronaut2 {
+    right: 414px;
+    top: 280px;
+  }
+
+  .astronaut3 {
+    right: 295px;
+    top: 107px;
+  }
 }

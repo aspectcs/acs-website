@@ -1,5 +1,12 @@
 @extends('layout.app')
 @section('content')
+
+    <div class="space-station">
+        <img src="@assets('images/elements/team/space-station.png')" alt="" class="station"/>
+        <img src="@assets('images/elements/team/astronaut1.png')" alt="" class="astronaut1 floating-element"/>
+        <img src="@assets('images/elements/team/astronaut2.png')" alt="" class="astronaut2 floating-element"/>
+        <img src="@assets('images/elements/team/astronaut3.png')" alt="" class="astronaut3 floating-element"/>
+    </div>
     <section class="team">
         <div class="container">
             <div class="heading" aria-hidden="true">

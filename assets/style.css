@@ -7,13 +7,20 @@
   --color-pink: #bb1c94;
 }
 
-html {
-  cursor: var(--cursor-default) !important;
-}
-
 html, body {
   font-family: "Montserrat", sans-serif;
   overflow-x: hidden;
+}
+
+html {
+  cursor: var(--cursor-default) !important;
+  -webkit-overflow-scrolling: touch;
+  overflow-scrolling: touch;
+}
+
+body {
+  overflow-y: visible;
+  height: unset;
 }
 
 @font-face {
@@ -274,164 +281,164 @@ html, body {
   animation: shining 4000ms ease-in-out infinite;
 }
 .shooting_star:nth-child(1) {
-  top: calc(50% - -65px);
-  left: calc(50% - 28px);
-  animation-delay: 2013ms;
+  top: calc(50% - 60px);
+  left: calc(50% - 1px);
+  animation-delay: 7839ms;
 }
 .shooting_star:nth-child(1)::before, .shooting_star:nth-child(1)::after {
-  animation-delay: 2013ms;
+  animation-delay: 7839ms;
 }
 .shooting_star:nth-child(2) {
-  top: calc(50% - 58px);
-  left: calc(50% - 39px);
-  animation-delay: 6293ms;
+  top: calc(50% - 193px);
+  left: calc(50% - 240px);
+  animation-delay: 9534ms;
 }
 .shooting_star:nth-child(2)::before, .shooting_star:nth-child(2)::after {
-  animation-delay: 6293ms;
+  animation-delay: 9534ms;
 }
 .shooting_star:nth-child(3) {
-  top: calc(50% - -42px);
-  left: calc(50% - 127px);
-  animation-delay: 5823ms;
+  top: calc(50% - 162px);
+  left: calc(50% - 184px);
+  animation-delay: 2683ms;
 }
 .shooting_star:nth-child(3)::before, .shooting_star:nth-child(3)::after {
-  animation-delay: 5823ms;
+  animation-delay: 2683ms;
 }
 .shooting_star:nth-child(4) {
-  top: calc(50% - -36px);
-  left: calc(50% - 74px);
-  animation-delay: 6049ms;
+  top: calc(50% - -189px);
+  left: calc(50% - 62px);
+  animation-delay: 4233ms;
 }
 .shooting_star:nth-child(4)::before, .shooting_star:nth-child(4)::after {
-  animation-delay: 6049ms;
+  animation-delay: 4233ms;
 }
 .shooting_star:nth-child(5) {
-  top: calc(50% - 62px);
-  left: calc(50% - 114px);
-  animation-delay: 6451ms;
+  top: calc(50% - -97px);
+  left: calc(50% - 288px);
+  animation-delay: 6387ms;
 }
 .shooting_star:nth-child(5)::before, .shooting_star:nth-child(5)::after {
-  animation-delay: 6451ms;
+  animation-delay: 6387ms;
 }
 .shooting_star:nth-child(6) {
-  top: calc(50% - -53px);
-  left: calc(50% - 211px);
-  animation-delay: 5603ms;
+  top: calc(50% - -68px);
+  left: calc(50% - 104px);
+  animation-delay: 2088ms;
 }
 .shooting_star:nth-child(6)::before, .shooting_star:nth-child(6)::after {
-  animation-delay: 5603ms;
+  animation-delay: 2088ms;
 }
 .shooting_star:nth-child(7) {
-  top: calc(50% - -94px);
-  left: calc(50% - 168px);
-  animation-delay: 9193ms;
+  top: calc(50% - 2px);
+  left: calc(50% - 99px);
+  animation-delay: 7444ms;
 }
 .shooting_star:nth-child(7)::before, .shooting_star:nth-child(7)::after {
-  animation-delay: 9193ms;
+  animation-delay: 7444ms;
 }
 .shooting_star:nth-child(8) {
-  top: calc(50% - -99px);
-  left: calc(50% - 225px);
-  animation-delay: 8665ms;
+  top: calc(50% - 54px);
+  left: calc(50% - 25px);
+  animation-delay: 6714ms;
 }
 .shooting_star:nth-child(8)::before, .shooting_star:nth-child(8)::after {
-  animation-delay: 8665ms;
+  animation-delay: 6714ms;
 }
 .shooting_star:nth-child(9) {
-  top: calc(50% - -174px);
-  left: calc(50% - 123px);
-  animation-delay: 1725ms;
+  top: calc(50% - 172px);
+  left: calc(50% - 124px);
+  animation-delay: 7378ms;
 }
 .shooting_star:nth-child(9)::before, .shooting_star:nth-child(9)::after {
-  animation-delay: 1725ms;
+  animation-delay: 7378ms;
 }
 .shooting_star:nth-child(10) {
-  top: calc(50% - 184px);
-  left: calc(50% - 222px);
-  animation-delay: 1139ms;
+  top: calc(50% - -197px);
+  left: calc(50% - 9px);
+  animation-delay: 3396ms;
 }
 .shooting_star:nth-child(10)::before, .shooting_star:nth-child(10)::after {
-  animation-delay: 1139ms;
+  animation-delay: 3396ms;
 }
 .shooting_star:nth-child(11) {
-  top: calc(50% - 88px);
-  left: calc(50% - 113px);
-  animation-delay: 2573ms;
+  top: calc(50% - -61px);
+  left: calc(50% - 123px);
+  animation-delay: 4966ms;
 }
 .shooting_star:nth-child(11)::before, .shooting_star:nth-child(11)::after {
-  animation-delay: 2573ms;
+  animation-delay: 4966ms;
 }
 .shooting_star:nth-child(12) {
-  top: calc(50% - 16px);
-  left: calc(50% - 67px);
-  animation-delay: 1811ms;
+  top: calc(50% - 178px);
+  left: calc(50% - 138px);
+  animation-delay: 4726ms;
 }
 .shooting_star:nth-child(12)::before, .shooting_star:nth-child(12)::after {
-  animation-delay: 1811ms;
+  animation-delay: 4726ms;
 }
 .shooting_star:nth-child(13) {
-  top: calc(50% - 127px);
-  left: calc(50% - 273px);
-  animation-delay: 9687ms;
+  top: calc(50% - 194px);
+  left: calc(50% - 67px);
+  animation-delay: 4538ms;
 }
 .shooting_star:nth-child(13)::before, .shooting_star:nth-child(13)::after {
-  animation-delay: 9687ms;
+  animation-delay: 4538ms;
 }
 .shooting_star:nth-child(14) {
-  top: calc(50% - 145px);
-  left: calc(50% - 153px);
-  animation-delay: 1865ms;
+  top: calc(50% - -12px);
+  left: calc(50% - 122px);
+  animation-delay: 7866ms;
 }
 .shooting_star:nth-child(14)::before, .shooting_star:nth-child(14)::after {
-  animation-delay: 1865ms;
+  animation-delay: 7866ms;
 }
 .shooting_star:nth-child(15) {
-  top: calc(50% - -71px);
-  left: calc(50% - 193px);
-  animation-delay: 1493ms;
+  top: calc(50% - -184px);
+  left: calc(50% - 70px);
+  animation-delay: 545ms;
 }
 .shooting_star:nth-child(15)::before, .shooting_star:nth-child(15)::after {
-  animation-delay: 1493ms;
+  animation-delay: 545ms;
 }
 .shooting_star:nth-child(16) {
-  top: calc(50% - -105px);
-  left: calc(50% - 11px);
-  animation-delay: 1275ms;
+  top: calc(50% - -22px);
+  left: calc(50% - 105px);
+  animation-delay: 9231ms;
 }
 .shooting_star:nth-child(16)::before, .shooting_star:nth-child(16)::after {
-  animation-delay: 1275ms;
+  animation-delay: 9231ms;
 }
 .shooting_star:nth-child(17) {
-  top: calc(50% - 16px);
-  left: calc(50% - 135px);
-  animation-delay: 3021ms;
+  top: calc(50% - 138px);
+  left: calc(50% - 195px);
+  animation-delay: 3607ms;
 }
 .shooting_star:nth-child(17)::before, .shooting_star:nth-child(17)::after {
-  animation-delay: 3021ms;
+  animation-delay: 3607ms;
 }
 .shooting_star:nth-child(18) {
-  top: calc(50% - 96px);
-  left: calc(50% - 67px);
-  animation-delay: 5537ms;
+  top: calc(50% - 134px);
+  left: calc(50% - 21px);
+  animation-delay: 9665ms;
 }
 .shooting_star:nth-child(18)::before, .shooting_star:nth-child(18)::after {
-  animation-delay: 5537ms;
+  animation-delay: 9665ms;
 }
 .shooting_star:nth-child(19) {
-  top: calc(50% - 146px);
-  left: calc(50% - 178px);
-  animation-delay: 8382ms;
+  top: calc(50% - 164px);
+  left: calc(50% - 294px);
+  animation-delay: 6678ms;
 }
 .shooting_star:nth-child(19)::before, .shooting_star:nth-child(19)::after {
-  animation-delay: 8382ms;
+  animation-delay: 6678ms;
 }
 .shooting_star:nth-child(20) {
-  top: calc(50% - -127px);
-  left: calc(50% - 194px);
-  animation-delay: 276ms;
+  top: calc(50% - 181px);
+  left: calc(50% - 204px);
+  animation-delay: 9130ms;
 }
 .shooting_star:nth-child(20)::before, .shooting_star:nth-child(20)::after {
-  animation-delay: 276ms;
+  animation-delay: 9130ms;
 }
 
 @keyframes tail {
@@ -1488,88 +1495,23 @@ section#orbit .contact-us .h1 {
   }
 }
 
-.core-values {
-  display: grid;
-  place-content: center;
-}
-.core-values .core-values-container {
-  --size: calc(100vh / 1.5);
-  --gap: 10px;
-  display: grid;
-  gap: var(--gap);
-  grid-template-columns: repeat(2, auto);
-  position: relative;
-  font-size: 0;
-  transition: 0.5s;
-  cursor: pointer;
-}
-.core-values .core-values-container > div {
-  position: relative;
-  aspect-ratio: 16/9;
-  width: var(--size);
-  -webkit-mask: radial-gradient(farthest-side at var(--_a), rgba(0, 0, 0, 0) calc(50% + var(--gap) / 2 + 1em), #000 calc(51% + var(--gap) / 2 + 1em));
-}
-.core-values .core-values-container > div > div {
-  font-size: 14px;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  padding: 1rem;
-  background-color: rgba(0, 0, 0, 0.2);
+section.horizontal-slide {
+  margin-top: 80px;
+  height: calc(100vh - 100px);
+  width: 299.97vw;
   display: flex;
-  flex-direction: column;
+  flex-wrap: nowrap;
 }
-.core-values .core-values-container > div img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.core-values .core-values-container > div.top-left {
-  --_a: calc(100% + var(--gap) / 2) calc(100% + var(--gap) / 2);
-}
-.core-values .core-values-container > div.top-left > div {
-  justify-content: start;
-  align-items: start;
-}
-.core-values .core-values-container > div.top-right {
-  --_a: calc(0% - var(--gap) / 2) calc(100% + var(--gap) / 2);
-}
-.core-values .core-values-container > div.top-right > div {
-  justify-content: start;
-  align-items: end;
-  text-align: right;
-}
-.core-values .core-values-container > div.bottom-left {
-  --_a: calc(100% + var(--gap) / 2) calc(0% - var(--gap) / 2);
-}
-.core-values .core-values-container > div.bottom-left > div {
-  justify-content: end;
-  align-items: start;
-}
-.core-values .core-values-container > div.bottom-right {
-  --_a: calc(0% - var(--gap) / 2) calc(0% - var(--gap) / 2);
-}
-.core-values .core-values-container > div.bottom-right > div {
-  justify-content: end;
-  align-items: end;
-  text-align: right;
-}
-.core-values .core-values-container > div.center {
-  position: absolute;
-  width: calc(var(--size) + 2em);
-  inset: 0;
-  margin: auto;
-  border-radius: 50%;
-}
-.core-values .core-values-container > div.center img {
-  border-radius: 50%;
-}
-.core-values .core-values-container:hover {
-  font-size: calc(var(--size) / 15);
+section.horizontal-slide .panel {
+  width: 33.33vw;
+  height: 80vh;
+  margin: 1.5rem;
+  padding: 1.5rem;
+  border: 1px solid white;
 }
 
 section.team .team-container {
+  margin-top: 15rem;
   display: flex;
   justify-content: space-evenly;
 }
@@ -1913,6 +1855,27 @@ section.team .team-container ul.social li a {
   transform: translateX(0) rotate(0deg);
   animation: handshake2 3s ease 1;
 }
+.partnerships .handshake .shine-effect {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: transparent;
+  bottom: 0;
+  left: 49%;
+  z-index: -1;
+  top: 41%;
+  animation: shine-effect 1s ease;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+}
+@keyframes shine-effect {
+  0% {
+    box-shadow: 0 0 0 0 white;
+  }
+  100% {
+    box-shadow: 0 0 40px 15px white;
+  }
+}
 @keyframes handshake1 {
   0% {
     transform: translateX(-50vw) rotate(360deg);
@@ -1940,6 +1903,35 @@ section.team .team-container ul.social li a {
   100% {
     transform: translateX(50vw) rotate(360deg);
   }*/
+}
+
+.space-station {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.space-station .station, .space-station .astronaut1, .space-station .astronaut2, .space-station .astronaut3 {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.space-station .station {
+  z-index: -1;
+}
+.space-station .astronaut1, .space-station .astronaut2, .space-station .astronaut3 {
+  z-index: -2;
+}
+.space-station .astronaut1 {
+  right: 0;
+  top: 300px;
+}
+.space-station .astronaut2 {
+  right: 414px;
+  top: 280px;
+}
+.space-station .astronaut3 {
+  right: 295px;
+  top: 107px;
 }
 
 /*# sourceMappingURL=style.css.map */
