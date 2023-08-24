@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="@assets('style.css')">
 </head>
 <body class="space-body">
-<div class="loader">
+<div class="loader" id="loader">
     <div class="scene">
         <div class="wrap">
             <div class="wall wall-right"></div>

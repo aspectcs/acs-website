@@ -1,3 +1,18 @@
+document.onreadystatechange = function() {
+    if (document.readyState !== "complete") {
+        document.querySelector("body").style.visibility = "hidden";
+        document.querySelector("#loader").style.visibility = "visible";
+    } else {
+        document.querySelector("#loader").style.display = "none";
+        document.querySelector("body").style.visibility = "visible";
+    }
+};
+/*$(document).ready(function(){
+    $('.loader').fadeOut();
+    /!*setTimeout(function (){
+        $('.loader').fadeOut();
+    },1000)*!/
+});*/
 $(window).scroll(function () {
     var sticky = $('.fixed-top'),
         scroll = $(window).scrollTop();
@@ -178,9 +193,3 @@ if (canvas) {
     window.addEventListener('resize', handleThrottledResize);
 }
 
-$(document).ready(function(){
-    $('.loader').fadeOut();
-   /*setTimeout(function (){
-       $('.loader').fadeOut();
-   },1000)*/
-});
