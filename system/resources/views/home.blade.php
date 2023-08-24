@@ -1,6 +1,6 @@
 @extends('layout.app')
 @section('content')
-    <section class="home-banner">
+    <section class="home-banner mt-5">
       <div class="container h-100">
           <div class="row h-100">
               <div class="col-12 col-md-6 order-1 order-md-2 position-relative z-index-0">

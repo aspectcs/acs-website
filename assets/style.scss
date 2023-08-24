@@ -1670,6 +1670,7 @@ section.horizontal-slide{
     margin: 1.5rem;
     padding: 1.5rem;
     border:1px solid white;
+    overflow: hidden;
   }
 }
 
@@ -2050,7 +2051,7 @@ section.team {
       left: 40%;
       bottom: 0;
       transform: translateX(0) rotate(0deg);
-      animation: handshake1 3s ease 1;
+      animation: handshake1 3s ease 1;  animation-delay: 2s;
     }
 
     .handshake2 {
@@ -2061,6 +2062,8 @@ section.team {
       top: -40px;
       transform: translateX(0) rotate(0deg);
       animation: handshake2 3s ease 1;
+      animation-delay: 2s;
+
     }
 
     .shine-effect {
@@ -2072,8 +2075,9 @@ section.team {
       left: 49%;
       z-index: -1;
       top: 41%;
+      border-radius: 50%;
       animation: shine-effect 1s ease;
-      animation-delay: 3s;
+      animation-delay: 5s;
       animation-fill-mode: forwards;
     }
 
@@ -2082,7 +2086,7 @@ section.team {
         box-shadow: 0 0 0 0 white;
       }
       100% {
-        box-shadow: 0 0 40px 15px white;
+        box-shadow: 0 0 40px 40px white;
       }
     }
     @keyframes handshake1 {
@@ -2142,15 +2146,18 @@ section#contact-us {
   .astronaut1 {
     right: 0;
     top: 300px;
+    animation-delay: 1.2s;
   }
 
   .astronaut2 {
     right: 414px;
     top: 280px;
+    animation-delay: 1.8s;
   }
 
   .astronaut3 {
     right: 295px;
     top: 107px;
+    animation-delay: 1s;
   }
 }

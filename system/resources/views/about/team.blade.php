@@ -25,9 +25,7 @@
                         <p>FrontEnd Developer</p>
                     </div>
                     <ul class="social">
-                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                        <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+                        <li><a href="#">View More</a></li>
                     </ul>
                 </div>
                 <div class="box shadow-sm p-4">
@@ -39,9 +37,7 @@
                         <p>FrontEnd Developer</p>
                     </div>
                     <ul class="social">
-                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                        <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+                        <li><a href="#">View More</a></li>
                     </ul>
                 </div>
                 <div class="box shadow-sm p-4">
@@ -53,9 +49,7 @@
                         <p>FrontEnd Developer</p>
                     </div>
                     <ul class="social">
-                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                        <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+                        <li><a href="#">View More</a></li>
                     </ul>
                 </div>
             </div>

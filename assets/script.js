@@ -179,7 +179,8 @@ if (canvas) {
 }
 
 $(document).ready(function(){
-   setTimeout(function (){
+    $('.loader').fadeOut();
+   /*setTimeout(function (){
        $('.loader').fadeOut();
-   },2000)
+   },1000)*/
 });
