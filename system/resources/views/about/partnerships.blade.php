@@ -20,10 +20,12 @@
                 </div>
             </div>
         </div>--}}
-        <div class="handshake">
-            <img src="@assets('images/elements/astronaut-handshake1.png')" alt="" class="handshake1">
-            <div class="shine-effect"></div>
-            <img src="@assets('images/elements/astronaut-handshake2.png')" alt="" class="handshake2">
+        <div class="handshake-outer">
+            <div class="handshake">
+                <img src="@assets('images/elements/astronaut-handshake1.png')" data-wow-duration="3s" data-wow-delay="0s" alt="" class="handshake1 wow">
+                <div class="shine-effect wow" data-wow-duration="1s" data-wow-delay="3s"></div>
+                <img src="@assets('images/elements/astronaut-handshake2.png')" data-wow-duration="3s" data-wow-delay="0s" alt="" class="handshake2 wow">
+            </div>
         </div>
     </section>
     <section>

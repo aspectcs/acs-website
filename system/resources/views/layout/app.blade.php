@@ -44,13 +44,16 @@
 {{--<div id="particles-js"></div>--}}
 <script src="@assets('node_modules/gsap/dist/gsap.min.js')"></script>
 <script src="@assets('node_modules/gsap/dist/ScrollTrigger.min.js')"></script>
-<script src="@assets('node_modules/gsap/dist/MotionPathPlugin.min.js')"></script>
+<script src="@assets('node_modules/wowjs/dist/wow.min.js')"></script>
 <script src="@assets('node_modules/jquery/dist/jquery.min.js')"></script>
 <script src="@assets('node_modules/@popperjs/core/dist/umd/popper.min.js')"></script>
 <script src="@assets('node_modules/bootstrap/dist/js/bootstrap.min.js')"></script>
 
 {{--<script src="@assets('node_modules/particles.js/particles.js')"></script>--}}
 @stack('script')
+<script>
+    new WOW().init();
+</script>
 <script src="@assets('script.js')"></script>
 {{--<script src="@assets('pages/home/space.js')"></script>--}}
 </body>

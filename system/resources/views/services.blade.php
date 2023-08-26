@@ -8,7 +8,7 @@
             <p class="sub-headline">Client Reviews That Leave Us in Awe!</p>
         </div>
         <div class="row">
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-md-6 mb-5">
                 <img src="https://picsum.photos/seed/picsum/600/400" class="img-fluid sun-rays rounded" alt="">
             </div>
             <div class="col-12 col-md-6">
@@ -27,7 +27,7 @@
             </div>
         </div>
         <div class="row section-margin">
-            <div class="col-12 col-md-6 order-2">
+            <div class="col-12 col-md-6 order-2  mb-5">
                 <img src="https://picsum.photos/seed/icsum/600/400" class="img-fluid sun-rays rounded" alt="">
             </div>
             <div class="col-12 col-md-6 order-1">
@@ -46,7 +46,7 @@
             </div>
         </div>
         <div class="row section-margin">
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-md-6  mb-5">
                 <img src="https://picsum.photos/seed/pisum/600/400" class="img-fluid sun-rays rounded" alt="">
             </div>
             <div class="col-12 col-md-6">

@@ -82,8 +82,8 @@
             </div>
         </div>
     </div>
-    <div class="contact-us">
-        <div class="container ">
+    <div class="contact-us pb-5">
+        <div class="container">
             <div class="row">
                 <div class="col-12 col-md-8">
                     <span class="h1 text-black">Contact us</span>
@@ -99,7 +99,7 @@
                         more recently with desktop publishing software like Aldus PageMaker including versions of Lorem
                         Ipsum.</p>
                 </div>
-                <div class="col-12 col-md-4 d-flex align-items-center">
+                <div class="col-12 col-md-4 d-flex align-items-center justify-content-center">
                     <button class="glow-on-hover active btn btn-dark text-uppercase btn-lg">Book a Discovery Call <i
                             class="ms-2 fa-brands fa-searchengin fa-bounce"></i></button>
                 </div>
