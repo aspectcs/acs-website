@@ -100,7 +100,7 @@
                         Ipsum.</p>
                 </div>
                 <div class="col-12 col-md-4 d-flex align-items-center justify-content-center">
-                    <button class="glow-on-hover active btn btn-dark text-uppercase btn-lg">Book a Discovery Call <i
+                    <button class="glow-on-hover active btn btn-dark text-uppercase btn-lg flat-button">Book a Discovery Call <i
                             class="ms-2 fa-brands fa-searchengin fa-bounce"></i></button>
                 </div>
             </div>

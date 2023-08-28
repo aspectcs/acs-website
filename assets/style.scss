@@ -249,6 +249,13 @@ body {
     border-radius: 10px;
   }
 
+  &.flat-button {
+    border-radius: 0;
+
+    &:before, &:after {
+      border-radius: 0;
+    }
+  }
 }
 
 @keyframes glowing {
@@ -1006,7 +1013,7 @@ header {
   }
 
   @include for-breakpoint(mobile) {
-    .navbar-collapse{
+    .navbar-collapse {
       background-color: #000;
     }
   }
@@ -1813,7 +1820,7 @@ section.team {
   }
 
   @include for-breakpoint(mobile) {
-    margin-top: 20rem !important;
+    margin-top: 12rem !important;
     .team-container {
       flex-direction: column;
       margin-top: 2rem;
@@ -2100,17 +2107,29 @@ section.team {
   }
 
   .handshake-outer {
-    height: 408px;
+    $height: 320px;
+    height: $height;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     .handshake {
       position: relative;
-      height: 100%;
+      width: 20px;
+      height: 20px;
+      background: transparent;
+      left: 0;
+      z-index: -1;
+      top: 0;
+      border-radius: 50%;
+      animation-name: shine-effect;
+      animation-fill-mode: forwards;
 
       .handshake1 {
         position: absolute;
-        width: 12%;
-        left: 36%;
-        bottom: 0;
+        width: 140px;
+        left: -130px;
+        top: -48px;
         transform: translateX(0) rotate(0deg);
         animation-name: handshake1;
         //animation: handshake1 3s ease 1;
@@ -2119,40 +2138,16 @@ section.team {
 
       .handshake2 {
         position: absolute;
-        width: 16%;
-        left: 47%;
+        width: 180px;
+        left: 0;
         z-index: -1;
-        top: 0;
+        top: -150px;
         transform: translateX(0) rotate(0deg);
         animation-name: handshake2;
         //animation: handshake2 3s ease 1;
         //animation-delay: 2s;
       }
 
-      .shine-effect {
-        position: absolute;
-        width: 2%;
-        height: 2%;
-        background: transparent;
-        bottom: 0;
-        left: 47%;
-        z-index: -1;
-        top: 50%;
-        border-radius: 50%;
-        animation-name: shine-effect;
-        //animation: shine-effect 1s ease;
-        //animation-delay: 5s;
-        animation-fill-mode: forwards;
-      }
-
-      @keyframes shine-effect {
-        0% {
-          box-shadow: 0 0 0 0 white;
-        }
-        100% {
-          box-shadow: 0 0 40px 40px white;
-        }
-      }
       @keyframes handshake1 {
         0% {
           transform: translateX(-50vw) rotate(360deg);
@@ -2183,14 +2178,26 @@ section.team {
       }
     }
 
+
+    @keyframes shine-effect {
+      0% {
+        box-shadow: 0 0 0 0 white;
+      }
+      100% {
+        box-shadow: 0 0 40px 40px white;
+      }
+    }
+
     @include for-breakpoint(mobile) {
-      height: 100px;
+      //height: 100px;
     }
   }
 }
 
 section#contact-us {
-
+  @include for-breakpoint(mobile) {
+    margin-top: 16rem;
+  }
 }
 
 .space-station {
@@ -2231,26 +2238,28 @@ section#contact-us {
   }
 
   @include for-breakpoint(mobile) {
-    .station {
-      width: 80vw;
-    }
+    display: none;
+  }
+}
 
-    .astronaut1, .astronaut2, .astronaut3 {
-      width: 80px;
-    }
-    .astronaut1 {
-      right: 20px;
-      top: 110px;
-    }
+form {
+  .form-group {
+    margin-bottom: 2rem;
+  }
 
-    .astronaut2 {
-      right: 180px;
-      top: 155px;
-    }
+  label {
+    font-size: 1.2rem;
+    margin-bottom: 0.2rem;
+  }
 
-    .astronaut3 {
-      right: 170px;
-      top: 80px;
+  input.form-control,textarea.form-control {
+    border-radius: 0;
+    background-color: transparent;
+    font-size: 1.2rem;
+    color: white;
+    &:focus{
+      background-color: transparent;
+      color: white;
     }
   }
 }

@@ -35,6 +35,6 @@
         </div>
     </div>
     <div class="section-margin text-center">
-        <button class="glow-on-hover active btn btn-dark text-uppercase">View more</button>
+        <button class="glow-on-hover active btn btn-dark text-uppercase flat-button">View more</button>
     </div>
 </section>

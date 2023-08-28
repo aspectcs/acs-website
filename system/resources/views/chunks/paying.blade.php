@@ -38,7 +38,7 @@
         </div>
     </div>
     <div class="text-center mt-5">
-        <button class="glow-on-hover active btn btn-dark text-uppercase btn-lg">Book a Discovery Call <i
+        <button class="glow-on-hover active btn btn-dark text-uppercase btn-lg flat-button">Book a Discovery Call <i
                 class="ms-2 fa-brands fa-searchengin fa-bounce"></i></button>
 
     </div>
