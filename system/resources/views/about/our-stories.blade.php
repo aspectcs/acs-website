@@ -3,7 +3,7 @@
     <section class="our-stories">
         <div class="container">
             <div class="row section-margin">
-                <div class="col-12 col-md-6">
+                <div class="col-12 col-md-6 order-2 order-md-1">
                     <div class="heading mb-3 me-4" aria-hidden="true">
                         <img src="@assets('images/elements/space-doodle.png')" class="space-doodle floating-element" alt="">
                         <p class="headline text-start">Our Story</p>
@@ -15,7 +15,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-12 col-md-6">
+                <div class="col-12 col-md-6 order-1 order-md-2">
                     <img src="https://picsum.photos/seed/as/600/400" class="img-fluid sun-rays rounded floating-element" alt="">
                 </div>
             </div>
@@ -37,7 +37,7 @@
                 </div>
             </div>
             <div class="row section-margin">
-                <div class="col-12 col-md-6">
+                <div class="col-12 col-md-6 order-2 order-md-1">
                     <div class="heading mb-3 me-4" aria-hidden="true">
                         <img src="@assets('images/elements/space-doodle4.png')" class="space-doodle4 floating-element" alt="">
                         <p class="headline text-start">History</p>
@@ -49,7 +49,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-12 col-md-6">
+                <div class="col-12 col-md-6 order-1 order-md-2">
                     <img src="https://picsum.photos/seed/asdsdsd/600/400" class="img-fluid sun-rays rounded floating-element" alt="">
                 </div>
             </div>
@@ -91,7 +91,7 @@
                             Ipsum.</p>
                     </div>
                     <div class="col-12 col-md-4 d-flex align-items-center">
-                        <button class="glow-on-hover active btn btn-dark text-uppercase btn-lg">Book a Discovery Call <i
+                        <button class="glow-on-hover active btn btn-dark text-uppercase btn-lg flat-button">Book a Discovery Call <i
                                 class="ms-2 fa-brands fa-searchengin fa-bounce"></i></button>
                     </div>
                 </div>

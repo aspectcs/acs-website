@@ -20,17 +20,17 @@
                     It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
                     and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem
                     Ipsum.</p>
-                <div class="my-5">
-                    <button class="glow-on-hover active btn btn-dark text-uppercase btn-lg">Book a Discovery Call <i
+                <div class="my-5 text-center text-md-start">
+                    <button class="glow-on-hover active btn btn-dark text-uppercase btn-lg flat-button">Book a Discovery Call <i
                             class="ms-2 fa-brands fa-searchengin fa-bounce"></i></button>
                 </div>
             </div>
         </div>
         <div class="row section-margin">
-            <div class="col-12 col-md-6 order-2  mb-5">
+            <div class="col-12 col-md-6 order-1 order-md-2 mb-5">
                 <img src="https://picsum.photos/seed/icsum/600/400" class="img-fluid sun-rays rounded" alt="">
             </div>
-            <div class="col-12 col-md-6 order-1">
+            <div class="col-12 col-md-6 order-2 order-md-1">
                 <h3 class="fs-2 stroke-text">Website Design</h3>
                 <p class="text-justify">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
@@ -39,8 +39,8 @@
                     It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
                     and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem
                     Ipsum.</p>
-                <div class="my-5 ">
-                    <button class="glow-on-hover active btn btn-dark text-uppercase btn-lg">Book a Discovery Call <i
+                <div class="my-5 text-center text-md-start">
+                    <button class="glow-on-hover active btn btn-dark text-uppercase btn-lg flat-button">Book a Discovery Call <i
                             class="ms-2 fa-brands fa-searchengin fa-bounce"></i></button>
                 </div>
             </div>
@@ -58,8 +58,8 @@
                     It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
                     and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem
                     Ipsum.</p>
-                <div class="my-5">
-                    <button class="glow-on-hover active btn btn-dark text-uppercase btn-lg">Book a Discovery Call <i
+                <div class="my-5 text-center text-md-start">
+                    <button class="glow-on-hover active btn btn-dark text-uppercase btn-lg flat-button">Book a Discovery Call <i
                             class="ms-2 fa-brands fa-searchengin fa-bounce"></i></button>
                 </div>
             </div>
