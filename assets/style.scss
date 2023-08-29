@@ -725,16 +725,16 @@ body {
 
   section {
     &:first-of-type {
-      margin-top: $margin + 3rem;
+      padding-top: $margin + 3rem;
     }
 
-    margin-top: $margin;
-    margin-bottom: $margin;
+    padding-top: $margin;
+    padding-bottom: $margin;
 
     .section-margin {
-      margin-top: $margin;
+      padding-top: $margin;
       @include for-breakpoint(mobile) {
-        margin-top: 2rem;
+        padding-top: 2rem;
       }
     }
   }
@@ -915,6 +915,9 @@ body {
         right: 0;
         left: unset;
         top: -10px;
+      }
+      &.astronaut-with-laptop{
+        top:-180px;
       }
     }
   }
@@ -2203,7 +2206,7 @@ section.team {
 
 section#contact-us {
   @include for-breakpoint(mobile) {
-    margin-top: 16rem;
+    padding-top: 16rem;
   }
 }
 
