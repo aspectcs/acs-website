@@ -22,6 +22,9 @@ Route::get('services', function () {
     return view('services');
 })->name('services');
 
+Route::get('discovery-page', function () {
+    return view('discovery-page');
+})->name('discovery-page');
 
 Route::get('contact-us', function () {
     return view('contact-us');

@@ -916,8 +916,9 @@ body {
         left: unset;
         top: -10px;
       }
-      &.astronaut-with-laptop{
-        top:-180px;
+
+      &.astronaut-with-laptop {
+        top: -180px;
       }
     }
   }
@@ -953,6 +954,10 @@ footer {
     margin-bottom: 1rem;
   }
 
+  a {
+    color: ghostwhite;
+  }
+
   ul {
     list-style: none;
     padding-left: 0;
@@ -962,7 +967,7 @@ footer {
 
       a {
         text-decoration: none;
-        color: white;
+        color: ghostwhite;
       }
     }
   }
@@ -1041,10 +1046,87 @@ header {
   }
 }
 
+#scroll-to-top {
+  width: 80px;
+  height: 80px;
+  z-index: 9999;
+  display: none;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  border-radius: 50%;
+  background-color: white;
+  padding: 20px;
+
+  a {
+    display: block;
+  }
+
+  img {
+    width: 40px;
+
+    &.rocket {
+    }
+
+    &.thrust {
+      position: absolute;
+      width: 16px;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      height: 0;
+    }
+  }
+
+  &.animate-to-top {
+    background-color: transparent;
+
+    a {
+      animation-name: rocket-top;
+      animation-duration: 2s;
+      animation-timing-function: ease;
+      animation-iteration-count: 1;
+    }
+
+    img.thrust {
+      animation-name: rocket-blast;
+      animation-duration: .2s;
+      animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+      animation-iteration-count: infinite;
+    }
+
+    @keyframes rocket-top {
+      0% {
+       transform: translateY(0);
+      }
+      100% {
+        transform: translateY(-100vh);
+      }
+    }
+
+
+    @keyframes rocket-blast {
+      0% {
+        height: 0;
+        transform: translateY(0px);
+      }
+      50% {
+        height: 12px;
+        transform: translateY(12px);
+      }
+      100% {
+        height: 0;
+        transform: translateY(0px);
+      }
+    }
+  }
+}
+
 section.home-banner {
   width: 100%;
   overflow: hidden;
-  height: calc(100vh - 80px);
+  height: 100vh;
   min-height: 720px;
   position: relative;
 
@@ -1056,10 +1138,27 @@ section.home-banner {
     span.underline {
       border-bottom: 8px solid #f30c73;
     }
+
+    animation: skew-float 6s ease-in-out infinite;
   }
 
   .skew {
     transform: skew(0deg, -6deg)
+  }
+
+  @keyframes skew-float {
+    0% {
+      box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+      transform: skew(0deg, -6deg) translatey(0px);
+    }
+    50% {
+      box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+      transform: skew(0deg, -6deg) translatey(-20px);
+    }
+    100% {
+      box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+      transform: skew(0deg, -6deg) translatey(0px);
+    }
   }
 
   .banner-area {
@@ -1091,57 +1190,66 @@ section.home-banner {
         z-index: 3;
       }
 
-      .elements {
-        .vector {
-          text-shadow: 0 0 50px #ffffff, 0 0 100px #ffffff, 0 0 150px #ffffff, 0 0 200px #ffffff;
-          animation: animate_vector 4s ease-in-out infinite;
-          opacity: 1;
-          //width: 80px;
-          z-index: 2;
+    }
 
-          &._1 {
-            right: 173px;
-            top: -12px;
-            animation-delay: 2s;
-          }
+    .person-with-arrow {
+      width: 60%;
+      position: absolute;
+      bottom: 0;
+      right: 20px;
+    }
 
-          &._2 {
-            left: 300px;
-            top: 200px;
-            animation-delay: 3s;
-          }
+    .elements {
+      .vector {
+        text-shadow: 0 0 50px #ffffff, 0 0 100px #ffffff, 0 0 150px #ffffff, 0 0 200px #ffffff;
+        animation: animate_vector 4s ease-in-out infinite;
+        opacity: 1;
+        //width: 80px;
+        z-index: 2;
 
-          &._3 {
-            left: 0;
-            top: 240px;
-            animation-delay: 4s;
-          }
-
-          &._4 {
-            right: 180px;
-            bottom: 80px;
-            animation-delay: 5s;
-          }
-
-
-          @keyframes animate_vector {
-            0% {
-              text-shadow: 0 0 50px #ffffff, 0 0 100px #ffffff, 0 0 150px #ffffff, 0 0 200px #ffffff;
-              transform: translatey(0px);
-            }
-            50% {
-              transform: translatey(-20px);
-            }
-            80% {
-              text-shadow: 0 0 0 #ffffff, 0 0 0 #ffffff, 0 0 0 #ffffff, 0 0 0 #ffffff;
-            }
-            100% {
-              text-shadow: 0 0 50px #ffffff, 0 0 100px #ffffff, 0 0 150px #ffffff, 0 0 200px #ffffff;
-              transform: translatey(0px);
-            }
-          }
-
+        &._1 {
+          right: 8%;
+          top: 18%;
+          animation-delay: 2s;
         }
+
+        &._2 {
+          right: 20%;
+          top: 40%;
+          animation-delay: 3s;
+          z-index: -1;
+        }
+
+        &._3 {
+          right: 40%;
+          top: 40%;
+          animation-delay: 4s;
+        }
+
+        &._4 {
+          right: 180px;
+          bottom: 80px;
+          animation-delay: 5s;
+        }
+
+
+        @keyframes animate_vector {
+          0% {
+            text-shadow: 0 0 50px #ffffff, 0 0 100px #ffffff, 0 0 150px #ffffff, 0 0 200px #ffffff;
+            transform: translatey(0px);
+          }
+          50% {
+            transform: translatey(-20px);
+          }
+          80% {
+            text-shadow: 0 0 0 #ffffff, 0 0 0 #ffffff, 0 0 0 #ffffff, 0 0 0 #ffffff;
+          }
+          100% {
+            text-shadow: 0 0 50px #ffffff, 0 0 100px #ffffff, 0 0 150px #ffffff, 0 0 200px #ffffff;
+            transform: translatey(0px);
+          }
+        }
+
       }
     }
   }
@@ -1149,8 +1257,10 @@ section.home-banner {
   @include for-breakpoint(mobile) {
     height: auto;
     .banner-area {
-      margin-top: 80px;
-      height: 480px;
+      position: relative;
+      padding-top: 80px;
+      margin-top: 40px;
+      //height: 480px;
 
       .arrow {
         left: -380px;
@@ -1161,42 +1271,48 @@ section.home-banner {
       .person-container {
         width: 100%;
         height: 80%;
+      }
 
-        .person {
-          height: 100%;
-          left: 0;
-          right: 0;
-          margin: auto;
-        }
+      .person-with-arrow {
+        width: 100%;
+        position: unset;
+        bottom: unset;
+        right: unset;
+      }
 
-        .elements {
-          .vector {
-            &._1 {
-              top: 0px;
-              right: 0;
-            }
+      .person {
+        height: 100%;
+        left: 0;
+        right: 0;
+        margin: auto;
+      }
 
-            &._2 {
+      .elements {
+        .vector {
+          &._1 {
+            top: 0;
+            right: 0;
+          }
 
-            }
+          &._2 {
 
-            &._3 {
-              left: 40px;
-            }
+          }
 
-            &._4 {
-                top:0;
-              left:20px;
-            }
+          &._3 {
+            left: 40px;
+          }
+
+          &._4 {
+            top: 0;
+            left: 20px;
           }
         }
       }
     }
   }
 
-  @media only screen and (max-height: 667px)
-  and (orientation: landscape) {
-    .arrow{
+  @media only screen and (max-height: 667px) and (orientation: landscape) {
+    .arrow {
       display: none;
     }
   }
@@ -1775,8 +1891,7 @@ section.team {
     }
 
     .box:hover .social li a {
-      background: #fff;
-      background-image: none;
+      background: #fff none;
       color: #000;
     }
 
@@ -1825,12 +1940,15 @@ section.team {
       border-radius: 36px;
       padding: 0px 8px;
       color: #fff;
+      text-decoration: none;
+      font-weight: bolder;
       transition: all .5s ease;
     }
   }
 
   @include for-breakpoint(mobile) {
     margin-top: 12rem !important;
+    padding-top: 0;
     .team-container {
       flex-direction: column;
       margin-top: 2rem;
@@ -2215,7 +2333,7 @@ section#contact-us {
   top: 0;
   right: 0;
 
-  .station, .astronaut1, .astronaut2, .astronaut3 {
+  .station, .astronaut1, .astronaut2, .astronaut3, .manager {
     position: absolute;
     right: 0;
     top: 0;
@@ -2223,6 +2341,14 @@ section#contact-us {
 
   .station {
     z-index: -1;
+  }
+
+  .manager {
+    z-index: 0;
+    right: 100px;
+    top: 20px;
+    box-shadow: none !important;
+    animation-delay: 2s;
   }
 
   .astronaut1, .astronaut2, .astronaut3 {
@@ -2262,14 +2388,21 @@ form {
     margin-bottom: 0.2rem;
   }
 
-  input.form-control,textarea.form-control {
+  input.form-control, textarea.form-control {
     border-radius: 0;
     background-color: transparent;
     font-size: 1.2rem;
     color: white;
-    &:focus{
+
+    &:focus {
       background-color: transparent;
       color: white;
     }
+  }
+}
+
+#team-modal {
+  img {
+    border-radius: 50%;
   }
 }

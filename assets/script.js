@@ -1,4 +1,4 @@
-document.onreadystatechange = function() {
+document.onreadystatechange = function () {
     if (document.readyState !== "complete") {
         document.querySelector("body").style.visibility = "hidden";
         document.querySelector("#loader").style.visibility = "visible";
@@ -7,18 +7,29 @@ document.onreadystatechange = function() {
         document.querySelector("body").style.visibility = "visible";
     }
 };
-/*$(document).ready(function(){
-    $('.loader').fadeOut();
-    /!*setTimeout(function (){
-        $('.loader').fadeOut();
-    },1000)*!/
-});*/
-$(window).scroll(function () {
-    var sticky = $('.fixed-top'),
-        scroll = $(window).scrollTop();
 
-    if (scroll >= 100) sticky.addClass('stuck');
-    else sticky.removeClass('stuck');
+$(document).ready(function () {
+    $("a[href='#top']").click(function () {
+        var scrollToTop = $('#scroll-to-top');
+        scrollToTop.addClass('animate-to-top');
+        $("html, body").animate({scrollTop: 0}, null, null, function () {
+            setTimeout(function () {
+                scrollToTop.removeClass('animate-to-top');
+                scrollToTop.hide();
+            }, 1000);
+        });
+        return false;
+    });
+});
+$(window).scroll(function () {
+    var sticky = $('.fixed-top'), scrollToTop = $('#scroll-to-top'),
+        scroll = $(window).scrollTop();
+    if (scroll >= 100) {
+        sticky.addClass('stuck');
+        scrollToTop.show();
+    } else {
+        sticky.removeClass('stuck');
+    }
 });
 
 /*

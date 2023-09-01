@@ -41,6 +41,12 @@
     <div class="shooting_star"></div>
     <div class="shooting_star"></div>
 </div>
+<div id="scroll-to-top">
+    <a href="#top" class="position-relative">
+        <img src="@assets('images/elements/rocket-colored-go-to-top.png')" class="rocket" alt="">
+        <img src="@assets('images/elements/rocket-thrust-go-to-top.png')" class="thrust" alt="">
+    </a>
+</div>
 {{--<div id="particles-js"></div>--}}
 <script src="@assets('node_modules/gsap/dist/gsap.min.js')"></script>
 <script src="@assets('node_modules/gsap/dist/ScrollTrigger.min.js')"></script>

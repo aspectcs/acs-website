@@ -15,7 +15,7 @@
                         <a class="nav-link" href="#">Site Audit</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Discovery Page</a>
+                        <a class="nav-link" href="@route('discovery-page')">Discovery Page</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="@route('services')">Services</a>

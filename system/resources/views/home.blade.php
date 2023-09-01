@@ -3,23 +3,26 @@
     <section class="home-banner">
       <div class="container h-100">
           <div class="row h-100">
-              <div class="col-12 col-md-6 order-2 position-relative z-index-0">
+              <div class="col-12 col-md-6 order-2 z-index-0">
                   <div class="banner-area">
-                      <img src="@assets('images/banner/arrow.png')" alt="" class="arrow" width="100%"/>
-                      <div class="person-container">
-                          <img src="@assets('images/banner/dummy.png')" alt="" class="person" width="100%"/>
-                          <div class="elements">
-                              <i class="vector _1 fa fa-dollar-sign fa-6x"></i>
-                              <i class="vector _2 fa fa-link fa-6x"></i>
-                              <i class="vector _3 fa fa-globe fa-6x"></i>
-                              <i class="vector _4 fa-brands fa-searchengin fa-6x"></i>
-                          </div>
+{{--                      <img src="@assets('images/banner/arrow.png')" alt="" class="arrow" width="100%"/>--}}
+                      {{--<div class="person-container">
+
+                      </div>--}}
+
+                      <img src="@assets('images/banner/person-with-arrow.png')" alt="" class="person-with-arrow"/>
+                      <div class="elements">
+                          <i class="vector _1 fa fa-dollar-sign fa-6x"></i>
+                          <i class="vector _2 fa fa-link fa-6x"></i>
+                          <i class="vector _3 fa fa-globe fa-6x"></i>
+                          <i class="vector _4 fa-brands fa-searchengin fa-6x"></i>
                       </div>
+
                   </div>
               </div>
               <div class="col-12 col-md-6 order-1 d-flex align-items-center justify-content-center">
                   <div class="text-container">
-                      <h1 class="display-1 fw-bolder text-white mb-5 skew floating-element">
+                      <h1 class="display-1 fw-bolder text-white mb-5">
                           <span class="underline">Lorem </span>Ipsum
                           <span class="d-block">
                                 What is Ipsum?
