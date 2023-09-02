@@ -2406,3 +2406,133 @@ form {
     border-radius: 50%;
   }
 }
+
+#discovery-page{
+  #signUpForm {
+    max-width: 500px;
+    background-color: #ffffff;
+    margin: 40px auto;
+    padding: 40px;
+    box-shadow: 0px 6px 18px rgb(0 0 0 / 9%);
+    border-radius: 12px;
+
+    .form-header {
+      gap: 5px;
+      text-align: center;
+      font-size: .9em;
+
+      .stepIndicator {
+        position: relative;
+        flex: 1;
+        padding-bottom: 30px;
+
+        &.active {
+          font-weight: 600;
+
+          &::before {
+            background-color: #ef0f76;
+            border: 3px solid #e8a6cc;
+          }
+
+          &::after {
+            background-color: #ef0f76;
+          }
+        }
+
+        &.finish {
+          font-weight: 600;
+          color: #ef0f76;
+
+          &::before {
+            background-color: #ef0f76;
+            border: 3px solid #e8a6cc;
+          }
+
+          &::after {
+            background-color: #ef0f76;
+          }
+        }
+
+        &::before {
+          content: "";
+          position: absolute;
+          left: 50%;
+          bottom: 0;
+          transform: translateX(-50%);
+          z-index: 9;
+          width: 20px;
+          height: 20px;
+          background-color: #ff94c5;
+          border-radius: 50%;
+          border: 3px solid #e8a6cc;
+        }
+
+        &::after {
+          content: "";
+          position: absolute;
+          left: 50%;
+          bottom: 8px;
+          width: 100%;
+          height: 3px;
+          background-color: #e8a6cc;
+        }
+
+        &:last-child:after {
+          display: none;
+        }
+      }
+    }
+
+
+    label {
+      font-size: 1rem;
+      margin-bottom: 0.2rem;
+    }
+    input[type="text"],input[type="email"],textarea {
+      padding: 15px 20px;
+      width: 100%;
+      font-size: 1em;
+      border: 1px solid #e3e3e3;
+      border-radius: 5px;
+
+      &:focus {
+        border: 1px solid #009688;
+        outline: 0;
+      }
+
+      &.invalid {
+        border: 1px solid #ffaba5;
+      }
+    }
+
+    .step {
+      display: none;
+    }
+
+    .form-footer {
+      overflow: auto;
+      gap: 20px;
+
+      button {
+        background-color: #ec0d78;
+        border: 1px solid #ec0d78 !important;
+        color: #ffffff;
+        padding: 13px 30px;
+        font-size: 1em;
+        cursor: pointer;
+        border-radius: 5px;
+        flex: 1;
+        margin-top: 5px;
+
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+
+      #prevBtn {
+        background-color: #fff;
+        color: #ec0d78;
+      }
+    }
+  }
+}
