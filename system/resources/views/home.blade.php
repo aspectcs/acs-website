@@ -47,7 +47,7 @@
     @include('chunks.testimonials')
     @include('chunks.paying')
     @include('chunks.orbit')
-    @include('chunks.case-studies')
+{{--    @include('chunks.case-studies')--}}
     @include('chunks.latest-blog')
     {{--<div class="night">
         <div class="shooting_star"></div>

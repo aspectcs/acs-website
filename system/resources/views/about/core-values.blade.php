@@ -62,56 +62,6 @@
                     centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
             </div>
         </div>
-        <div class="panel">
-            <img src="https://picsum.photos/seed/as/600/400" class="img-fluid" alt="">
-            <div class="mt-4">
-                <p class="stroke-text h3">Core Values</p>
-                <p class="h6 text-justify mb-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
-                    took a galley of type and scrambled it to make a type specimen book. It has survived not only five
-                    centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
-            </div>
-        </div>
-        <div class="panel">
-            <img src="https://picsum.photos/seed/as/600/400" class="img-fluid" alt="">
-            <div class="mt-4">
-                <p class="stroke-text h3">Core Values</p>
-                <p class="h6 text-justify mb-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
-                    took a galley of type and scrambled it to make a type specimen book. It has survived not only five
-                    centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
-            </div>
-        </div>
-        <div class="panel">
-            <img src="https://picsum.photos/seed/as/600/400" class="img-fluid" alt="">
-            <div class="mt-4">
-                <p class="stroke-text h3">Core Values</p>
-                <p class="h6 text-justify mb-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
-                    took a galley of type and scrambled it to make a type specimen book. It has survived not only five
-                    centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
-            </div>
-        </div>
-        <div class="panel">
-            <img src="https://picsum.photos/seed/as/600/400" class="img-fluid" alt="">
-            <div class="mt-4">
-                <p class="stroke-text h3">Core Values</p>
-                <p class="h6 text-justify mb-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
-                    took a galley of type and scrambled it to make a type specimen book. It has survived not only five
-                    centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
-            </div>
-        </div>
-        <div class="panel">
-            <img src="https://picsum.photos/seed/as/600/400" class="img-fluid" alt="">
-            <div class="mt-4">
-                <p class="stroke-text h3">Core Values</p>
-                <p class="h6 text-justify mb-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
-                    took a galley of type and scrambled it to make a type specimen book. It has survived not only five
-                    centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
-            </div>
-        </div>
     </section>
 
     <section class="container">
@@ -134,7 +84,7 @@
         gsap.registerPlugin(ScrollTrigger);
         let sections = gsap.utils.toArray(".panel");
         gsap.to(sections, {
-            xPercent: -100 * (sections.length),
+            xPercent: -100 * (sections.length - 2.5),
             ease: "none",
             scrollTrigger: {
                 trigger: ".horizontal-slide",

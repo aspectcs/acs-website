@@ -1827,7 +1827,7 @@ section.core-values {
 section.horizontal-slide {
   margin-top: 80px;
   height: calc(100vh - 100px);
-  width: calc(33.33vw * 9);
+  width: calc(33.33vw * 4);
   display: flex;
   flex-wrap: nowrap;
 
@@ -1841,7 +1841,7 @@ section.horizontal-slide {
   }
 
   @include for-breakpoint(mobile) {
-    width: calc(100vw * 9);
+    width: calc(100vw * 4);
     .panel {
       width: 100vw;
     }

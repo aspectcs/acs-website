@@ -65,7 +65,7 @@
             </div>
         </div>
     </section>
-    @include('chunks.case-studies')
+{{--    @include('chunks.case-studies')--}}
     @include('chunks.orbit')
     @include('chunks.testimonials')
 @endsection
